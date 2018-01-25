@@ -1,15 +1,29 @@
+%preamble
 \documentclass{article}
+
+%
 \usepackage{hyperref}
 
-
+%title page
 \title{My first document}
 \date{\today}
 \author{Arun}
 
+%actual document
 \begin{document}
-  \maketitle
-  \newpage
+  \maketitle %insert titlepage here
+  \newpage %does what it says
+
+  %hides page numbering
+  %\pagenumbering{gobble}
+
+  %re-enables page numbering
+  %\pagenumbering{arabic}
+  %\pagenumbering{roman}
+
+  %how to add an inline link:
   \href{https://www.latex-tutorial.com/tutorials/first-document/}{This is the guide I'm following}
   \newpage
-  Holy crap it's already almost the end of January
+
+  Holy crap it's already almost the end of January!
 \end{document}
