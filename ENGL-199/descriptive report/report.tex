@@ -3,14 +3,14 @@
 
 %sets length of spacing between paragraphs
 \setlength{\parskip}{1em}
-
+\usepackage{url}
 
 \synctex=1
 
-%temporaty
+%temporary
 \usepackage{blindtext}
 
-% \usepackage[style=ieee]{biblatex}
+%\usepackage[style=ieee]{biblatex}
 \bibliographystyle{IEEEtran}
 %title page
 \title{Why You Should Drive a Tesla\\
@@ -22,19 +22,33 @@
   \maketitle %insert titlepage here
 
   %Introduction
-  \blindtext
-  \cite{eberhard200621}
-  \blindtext
+  \section{Introduction}
+  %General intro statement
+  %Talking about the environment
+  %Talking about price
+  One might think that the price of a Tesla vehicle is expensive, given the many
+  features a Tesla car has to offer. While the recently announced Tesla Roadster
+  has a base price  close to a quarter million\cite{teslaroadster}, one may be
+  surprised with Tesla's other consumer offerings, namely the luxury Tesla Model S,
+  and the newer, more affordable Tesla Model 3. I will be focusing on the Model 3,
+  given its more budget-friendly price point.
+  %Talking about the Environment
+  \newpage
 
-  %Reason 1
-  \blindtext\blindtext
+  \section{Autopilot}
+  \blindtext{}\blindtext{}
 
   %Reason 2
-  \blindtext\blindtext
+  \section{Price}
+  \blindtext{}\blindtext{}
+
   %Reason 3
-  \blindtext\blindtext
+  \section{The Environment}
+  \blindtext{}\blindtext{}
+
   %Conclusion
-  \blindtext\blindtext
+  \section{Conclusion}
+  \blindtext{}\blindtext{}
 
 \bibliography{references}
 \end{document}
