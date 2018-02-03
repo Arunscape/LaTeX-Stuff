@@ -2,8 +2,8 @@
 \documentclass{article}
 \synctex=1
 
-\usepackage[style=ieee]{biblatex}
-
+% \usepackage[style=ieee]{biblatex}
+\bibliographystyle{IEEEtran}
 %title page
 \title{ENGL 199 Descriptive Report}
 \date{\today}
@@ -16,13 +16,16 @@
   \paragraph{Introduction}
 
   some texts
-
+\cite{1}
   \paragraph{next topic}
 
-  other paragraph
+  other paragraph, some claim \cite{WinNT}
+
+
+  other claim\cite{website2013}
 
   % \newpage %does what it says
-
+  tesla cars \cite{rosoff_elon_nodate}
   %hides page numbering
   %\pagenumbering{gobble}
 
@@ -30,5 +33,6 @@
   %\pagenumbering{roman}
 
   \newpage
-\printbibliography
+
+\bibliography{references}
 \end{document}
