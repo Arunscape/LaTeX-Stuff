@@ -5,9 +5,9 @@
 \graphicspath{ {images/} }
 
 \usepackage{lipsum}
-
-\bibliographystyle{IEEEtran}
-
+\usepackage{float}
+% \bibliographystyle{IEEEtran}
+\bibliographystyle{ieeetr}
 %actual document
 \begin{document}
 
@@ -19,7 +19,7 @@
         Experiment 1
         \vspace{1cm}
 
-        Electostatic Potentials and Fields
+        Electrostatic Potentials and Fields
         \vspace{1cm}
 
         By: Arun Woosaree
@@ -28,6 +28,7 @@
         Lab partners:
         \vspace{.25cm}
         \Large
+
         Fatemeh Ghafari Far
 
         Yvonne Hong
@@ -37,7 +38,7 @@
         PHYS 230 Lab EH71
         \vspace{1cm}
 
-        TA: The Worst Physics TA Ever
+        TA: Andrei Tetriakov
         \vspace{1cm}
 
         Date of Lab: \today
@@ -46,107 +47,178 @@
 \end{titlepage}
 
 \section{Introduction}
-In the following experiment, we measure electric potential differences between
-two charged conductors. $ F=qe$
+Begin with experiment’s objectives\\
+Give physical background:\\
+○ Describe investigated/used\\
+phenomena e.g. Gauss’s law,\\
+field lines, equipotential lines.\\
+○ Do not copy text from a
+textbook/manual\\
+Provide equations you used\\
+○ Identify all symbols\\
 
+In this experiment, we explore Gauss's Law using a circular capacitor, and
+we map electric potential, and the electric field of a parallel plate capacitor.
+A capacitor is essentially two charged conductors separated by some insulator.
+We can measure the potential differences in the region between the charged conductors,
+and since our geometry is simple, the electric potential can be compared with
+predictions made using Gauss's Law. We can use a contour map consisting of equipotential
+curves, which can then be used to construct the corresponding electric field lines.
+By analyzing field patterns, we can determine the charge distribution on the surface of
+the charged conductors.
+
+The electric field \textbf{E} is defined such that a positive test charge $q$
+placed in the electric field will experience a force $\textbf{F}=q\textbf{E}$.
+Additionally, a certain amount of work $W=F \Delta s=qE\Delta s$ is done to move the charge
+a distance $\Delta s$, parallel to the electrostatic force. The electrostatic force is
+conservative, so the potential energy $U$ must decrease by $\Delta U=-qE\Delta s$.
+$V$, the electric potential is defined to be potential energy per unit charge $V=U/q$.
+The magnitude of an electric field at a point can be related to $V$ by
 \begin{equation}
   E=-\frac{\Delta V}{\Delta s}
 \end{equation}
 
+Using Gauss's law, in part 1 of the experiment we imagine a Gaussian cylinder enclosing
+the inner and outer conductors of a circular capacitor. This cylinder has a radius $r$ and
+length $L$ with flat end caps. Since \textbf{E} is parallel to the end caps, the flux, denoted $\Phi$ on
+the end caps are zero, which leaves the curved surface of the cylinder, with area $2\pi rL$.
+Since \textbf{E} is constant and perpendicular to the curved surface, the total flux $\Phi_E$ can be found
 \begin{equation}
   \Phi_E = \Phi_{end1} + \Phi_cylinder + \Phi_{end2} = 0+E(2\pi rL) + 0 =\frac{Q}{\epsilon_0}
 \end{equation}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{fig1.jpg}
+    \caption{Gaussian Surface between two circular conductors. \cite{labmanual}}
+\end{figure}
+
+$\sigma$ is defined as the charge per unit area on the surface of the inner conductor.
+The enclosed charge $Q$ enclosed by the Gaussian cylinder is $Q=(2 \pi AL)\sigma$, where
+$A$ is the radius of the inner conductor, and $\epsilon_0=8.85418782 \times 10^{-12} m^{-3} kg^{-1} s^{4} A^{2}$ is the permittivity of free space.
+Given the above information, the magnitude of the electric field at some radius $r$
+can then be computed
 
 \begin{equation}
   E=\frac{\sigma A}{\epsilon_0 r}
 \end{equation}
 
+If we put a probe at radius $r$, and the outer conductor has a radius $B$ then the voltage
+difference between the probe and the outer conductor is
 \begin{equation}
   V_r-V_B=\frac{\sigma A}{\epsilon_0 r} \ln{\frac{B}{r}}
 \end{equation}
-
+From which we can obtain the following equation if we set the voltage difference between the two conductors to have a value $V_0$
 \begin{equation}
   \frac{V_r-V_B}{V_0}=\frac{\ln{\frac{B}{r}}}{\ln{\frac{B}{A}}}
 \end{equation}
-
+or alternatively,
 \begin{equation}
   \ln{r} =\ln{\frac{A}{B}}(\frac{V_r-V_B}{V_0}) + ln{B}
 \end{equation}
-In experiment 8, we explore the conservation of energy, specifically the transformation of potential energy into kinetic energy, and also the conversion of kinetic energy into potential energy using a mass hanging on a pendulum, and a spark-tape record. In the beginning, the bob is held at a height with some potential energy and is released from rest (meaning zero kinetic energy). Naturally, the bob starts moving due to gravity, which means the bob’s potential energy is being turned into kinetic energy. The reverse also happens after the bob has reached its lowest height relative to the ground as it oscillates. After that point, kinetic energy is converted back into potential energy.
-The kinetic energy of any object with mass m can be determined with the formula
-Where ‘EK’ is the kinetic energy, ‘m’ is the mass of the object, and ‘v’ is the velocity of the object.
-For the pendulum,  where ‘r’ is the length of the string of the pendulum to the center of the bob, ‘R’ is the length of the string to the spark track, and ‘V’ is the instantaneous velocity of the bob. ‘V’ can be approximated as: , where ‘ΔS’ is the change in displacement of the bob during a small length of time ‘Δt’ (due to Δt being small). At a spark number ‘n’,  where ‘sn+1’ is the displacement of the bob after spark n and ‘sn-1’ is the displacement of the bob before spark n.  The displacements are measured with respect to where the bob hangs at rest at the center of the pendulum. Subsequently, ‘tn+1’ is the time when the spark after spark ‘n’ was made, and ‘tn-1’ is the time before spark n. The equations can be put together to get:
 
 
-
-The potential energy of any object with mass m can be found using the equation
-Where ‘Ep’ is the gravitational potential energy of the object, ‘g’ is the acceleration due to gravity on Earth, and ‘h’ is the height of the object. For the pendulum, h is the height of the bob with respect to the lowest point at the center of the pendulum, which can be found using the following formula:
-. Recall that ‘r’ is the length of the string of the pendulum to the center of the bob. ‘θ’ can be found using  where ‘θ’ is expressed in radians. Recall that ‘S’ is the displacement of the bob and ‘R’ is the length of the string to the spark track.  The equations can be combined to get:
-
-
-The total energy, (ET) of the bob is  , because of the law of conservation of energy which says that energy cannot be created or destroyed, but can be converted. We can expect ET to be constant, assuming no energy loss due to things like friction, since at the highest position, the bob has all potential energy, at the lowest position, all of its potential energy (ideally) is converted into kinetic energy, and as the bob rises to the top again, its kinetic energy is stored once again as potential energy. We can see scenarios akin to this that are pretty common in real life, such as in rollercoasters.  For rollercoasters, there is always the part where the car moves slowly at a steep incline. This is where gravitational potential energy is being stored as the car rises. This potential is then converted into kinetic energy as the car drops down, and speeds up due to the increase in kinetic energy. The kinetic energy is then converted back into gravitational potential energy when the car goes up again, and slows down, possibly due to going in a loop, where the conversion of kinetic energy and potential energy continue onwards.
-On a graph with ET , EP , and EK  as functions of time (total time is half a period in this experiment), we would expect to see ET ­ as a horizontal, constant line, with EP initially being the same value as ET ,and EK being zero. About halfway, we would expect EP to be zero, and EK=ET because all of the potential energy should theoretically have converted into kinetic energy at that point. Finally, at the end of the graph we expect all of EK­ to have converted back into EP. (Hence, EK=0 , EP = EK)
-
-  \begin{equation}
-    F_e=\frac{k q_1 q_2}{r^2}
-  \end{equation}
-
-  \begin{equation}
-    F_e \cos\theta - F_g \sin\theta=0
-  \end{equation}
-
-  \begin{equation}
-    \frac{F_e}{F_g} = \tan\theta
-  \end{equation}
-
-  \begin{equation}
-    \frac{d_1}{l}=\sin\theta
-  \end{equation}
-
-  \begin{equation}
-    F_e=F_g\frac{d_1}{l}
-  \end{equation}
-
-  \begin{equation}
-    \frac{k q_1 q_2}{r^2}=mg\frac{d_1}{l}
-  \end{equation}
-
-  \begin{equation}
-    \frac{h}{H}=\frac{r}{R}=\frac{d_1}{D_1}=\frac{d_2}{D_2}
-  \end{equation}
-
-  \begin{equation}
-    D_1=(\frac{H}{h})^3 (\frac{l}{mg}) \frac{k q_1 q_2}{R^2}
-  \end{equation}
+% In experiment 8, we explore the conservation of energy, specifically the transformation of potential energy into kinetic energy, and also the conversion of kinetic energy into potential energy using a mass hanging on a pendulum, and a spark-tape record. In the beginning, the bob is held at a height with some potential energy and is released from rest (meaning zero kinetic energy). Naturally, the bob starts moving due to gravity, which means the bob’s potential energy is being turned into kinetic energy. The reverse also happens after the bob has reached its lowest height relative to the ground as it oscillates. After that point, kinetic energy is converted back into potential energy.
+% The kinetic energy of any object with mass m can be determined with the formula
+% Where ‘EK’ is the kinetic energy, ‘m’ is the mass of the object, and ‘v’ is the velocity of the object.
+% For the pendulum,  where ‘r’ is the length of the string of the pendulum to the center of the bob, ‘R’ is the length of the string to the spark track, and ‘V’ is the instantaneous velocity of the bob. ‘V’ can be approximated as: , where ‘ΔS’ is the change in displacement of the bob during a small length of time ‘Δt’ (due to Δt being small). At a spark number ‘n’,  where ‘sn+1’ is the displacement of the bob after spark n and ‘sn-1’ is the displacement of the bob before spark n.  The displacements are measured with respect to where the bob hangs at rest at the center of the pendulum. Subsequently, ‘tn+1’ is the time when the spark after spark ‘n’ was made, and ‘tn-1’ is the time before spark n. The equations can be put together to get:
+%
+%
+%
+% The potential energy of any object with mass m can be found using the equation
+% Where ‘Ep’ is the gravitational potential energy of the object, ‘g’ is the acceleration due to gravity on Earth, and ‘h’ is the height of the object. For the pendulum, h is the height of the bob with respect to the lowest point at the center of the pendulum, which can be found using the following formula:
+% . Recall that ‘r’ is the length of the string of the pendulum to the center of the bob. ‘θ’ can be found using  where ‘θ’ is expressed in radians. Recall that ‘S’ is the displacement of the bob and ‘R’ is the length of the string to the spark track.  The equations can be combined to get:
+%
+%
+% The total energy, (ET) of the bob is  , because of the law of conservation of energy which says that energy cannot be created or destroyed, but can be converted. We can expect ET to be constant, assuming no energy loss due to things like friction, since at the highest position, the bob has all potential energy, at the lowest position, all of its potential energy (ideally) is converted into kinetic energy, and as the bob rises to the top again, its kinetic energy is stored once again as potential energy. We can see scenarios akin to this that are pretty common in real life, such as in rollercoasters.  For rollercoasters, there is always the part where the car moves slowly at a steep incline. This is where gravitational potential energy is being stored as the car rises. This potential is then converted into kinetic energy as the car drops down, and speeds up due to the increase in kinetic energy. The kinetic energy is then converted back into gravitational potential energy when the car goes up again, and slows down, possibly due to going in a loop, where the conversion of kinetic energy and potential energy continue onwards.
+% On a graph with ET , EP , and EK  as functions of time (total time is half a period in this experiment), we would expect to see ET ­ as a horizontal, constant line, with EP initially being the same value as ET ,and EK being zero. About halfway, we would expect EP to be zero, and EK=ET because all of the potential energy should theoretically have converted into kinetic energy at that point. Finally, at the end of the graph we expect all of EK­ to have converted back into EP. (Hence, EK=0 , EP = EK)
 
 \section{Experimental Method}
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.4\textwidth]{fig1.jpg}
-    \caption{Gaussian Surface between two circular conductors. \cite{labmanual}}
-\end{figure}
 
-\begin{figure}[h!]
+
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{fig2.jpg}
     \caption{Measuring the voltage difference at various radii between two circular conductors. \cite{labmanual}}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.4\textwidth]{fig3.jpg}
   \caption{Measuring the voltage difference in a region between two parallel conductors. \cite{labmanual}}
 \end{figure}
-When the apparatus illustrated above is set up, i.e. the lengths ‘r’ and ‘R’ are known, the center of the spark tape is marked when the bob is hanging freely at rest, and the bob is at the starting position, being held by the electromagnet, and the string is steadied to lessen any vibrations, the power going to the electromagnet is cut, and as a result, the bob is released from rest. The ‘RUN’ button on the spark timer is immediately (as best as humanly possible) held down, until the bob reaches approximately the maximum height on the other side of the track, or when one half of the period of the pendulum is completed.
+List all equipment used\\
+○ Provide parameters as detailed as
+possible: masses, frequencies,
+etc.\\
+Report what YOU DID to achieve
+experimental goals:\\
+○ Do not use imperative clause\\
+○ Use first person narrative or
+passive voice\\
+Based on this section you should be
+able to reproduce your results without a
+manual
 
-The spark timer is set to spark 30 times a second, so the time elapsed between each burn hole on the spark tape is 1/30th of a second. Once the spark tape is obtained from the apparatus, we need to measure the displacements of the glider as it was moving. To do so, we use a meter stick, and a displacement of 0.00m is taken to be the at the center of the spark tape, which is the point that was marked while the bob hangs freely at rest. This means that the initial displacement of the bob is taken to be a negative displacement, and the points after the bob passes the center are taken to be positive.
-
-After measuring the displacements of the bob, we enter the data points into Excel, and also calculate the time elapsed for each data point. (Ex. At the 10th burn hole, the time elapsed would be 10*1/30 seconds). From this data, we can calculate EK , EP , and ET  using equations  5,9 and 10 and plot them on a graph as a function of time. The ET curve was fit to a linear regression, and the EK and EP curves were fit to quadratic curves.
+% When the apparatus illustrated above is set up, i.e. the lengths ‘r’ and ‘R’ are known, the center of the spark tape is marked when the bob is hanging freely at rest, and the bob is at the starting position, being held by the electromagnet, and the string is steadied to lessen any vibrations, the power going to the electromagnet is cut, and as a result, the bob is released from rest. The ‘RUN’ button on the spark timer is immediately (as best as humanly possible) held down, until the bob reaches approximately the maximum height on the other side of the track, or when one half of the period of the pendulum is completed.
+%
+% The spark timer is set to spark 30 times a second, so the time elapsed between each burn hole on the spark tape is 1/30th of a second. Once the spark tape is obtained from the apparatus, we need to measure the displacements of the glider as it was moving. To do so, we use a meter stick, and a displacement of 0.00m is taken to be the at the center of the spark tape, which is the point that was marked while the bob hangs freely at rest. This means that the initial displacement of the bob is taken to be a negative displacement, and the points after the bob passes the center are taken to be positive.
+%
+% After measuring the displacements of the bob, we enter the data points into Excel, and also calculate the time elapsed for each data point. (Ex. At the 10th burn hole, the time elapsed would be 10*1/30 seconds). From this data, we can calculate EK , EP , and ET  using equations  5,9 and 10 and plot them on a graph as a function of time. The ET curve was fit to a linear regression, and the EK and EP curves were fit to quadratic curves.
 
 \section{Results}
-  \lipsum[3]
+Part I\\
+Linearized equation: provide
+all parameters e.g. variables,
+slope, intercept, etc.\\
+Linear graph: add trendline,
+provide fitting parameters
+(slope, intercept)\\
+Give values A and B obtained
+from the graph and measured
+directly\\
+Use Linest to find
+uncertainties\\
 
+\begin{table}[H]
+  \centering
+  \includegraphics[width=\textwidth]{chart1.png}
+  \caption{Measuring the voltage difference in a region between two parallel conductors.}
+\end{table}
+
+Part II\\
+Provide graph from the template\\
+By hand draw field lines, show charge
+distribution, etc.\\
+Provide the explanation, calculations,
+answer questions in Discussion.\\
+
+\begin{table}[H]
+  \centering
+  \includegraphics[width=\textwidth]{chart2.png}
+  \caption{Measuring the voltage difference in a region between two parallel conductors.}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \includegraphics[width=\textwidth]{chart3.png}
+  \caption{Measuring the voltage difference in a region between two parallel conductors.}
+\end{table}
+
+
+Should be a coherent text\\
+Present all data and calculations with words. Examples:\\
+○ “Row data for free-fall acceleration measurements is given by Table 1.”\\
+○ “In order to find the acceleration we plot doulbed distance as a function of
+time squired as is shown by Figure 1.” or “To find the acceleration we
+linearize Equation 1 as d(x)=ax, where x=t2/2 and plot it on Figure 1”.\\
+○ “The slope of the graph corresponds to the acceleration and can be found
+along with the uncertainty using LINEST(see Table 2)”\\
+○ “The uncertainty in distance is calculated as d= x+ y”\\
+○ “Finally, the acceleration due to gravity is 9.81± 0.03 m/s2 ”\\
+All figures and should have label and caption \\(e.g. “Figure 1: position as a function
+of time during free fall”).\\
+Use scientific notation (103, not 1E3) and appropriate significant digits
 \section{Discussion}
 The results from the lab overall seemed reasonable, because the data fit pretty nicely to the curves that we expected them to in the graph. ET was fit to a linear curve, and EK and EP were fit to quadratic curves.  (Fig.2).  The value calculated for energy loss per second from the graph (-0.44739±0.510812 J/s) does not agree within error of the expected value we calculated (0.00161 J/s) which was calculated by measuring the initial and final displacement of the bob on the pendulum after 25 periods, finding the initial and final potential energies, calculating the total time for 25 periods, and then finding the average energy loss per second. The calculated value from the graph is 3 orders of magnitude different. However, given that the slope of the graph(fig.4) seemed almost flat, the data still seems somewhat reasonable.
 
