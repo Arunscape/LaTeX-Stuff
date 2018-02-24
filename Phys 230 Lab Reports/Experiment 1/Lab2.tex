@@ -62,10 +62,11 @@
 In this experiment, we explore Gauss's Law using a circular capacitor, and
 we map electric potential and the electric field of a parallel plate capacitor.
 A capacitor is essentially two charged conductors separated by some insulator.
-We can measure the potential differences in the region between the charged conductors,
+In Part 1, we measure the potential differences in the region between the charged conductors in a circular capacitor,
 and since our geometry is simple, the electric potential can be compared with
-predictions made using Gauss's Law. We can use a contour map consisting of equipotential
-curves, which can then be used to construct the corresponding electric field lines.
+predictions made using Gauss's Law. In Part 2, we make a contour map consisting of equipotential
+curves from our data, which can then be used to construct the corresponding electric field lines
+of the parallel plate capacitor.
 By analyzing field patterns, we can determine the charge distribution on the surface of
 the charged conductors.
 
@@ -118,7 +119,8 @@ or alternatively,
   \ln{r} =\ln{\frac{A}{B}}(\frac{V_r-V_B}{V_0}) + ln{B}
 \end{equation}
 In part 2 of the experiment, we map the electric field of a parallel plate capacitor, and draw equipotential lines
-which correspond to electric field lines.
+which correspond to electric field lines. An equipotential surface is defined such that the
+potential difference is constant at any point on the surface.
 
 
 \section{Experimental Method}
@@ -349,29 +351,60 @@ as a function of the horizontal and vertical positions of the probe.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{chart3.png}
-  \caption{An equipotential surface map generated from the data in Table 4 above}
+  \caption{An electric potential surface map generated from the data in Table 4 above}
 \end{figure}
 
 
 
 \section{Discussion}
-referring to table 3, our calculated results seemed fairly close to the measured
-----
+
+\subsection{Part 1}
+From Table 3, we can see that our calculated values for the inner radius A
+($1.73 \pm 0.03 cm$)
+and outer radius B
+($9.3 \pm 0.1 cm$) were fairly close to the measured values $1.9 \pm 0.1 cm$ for A
+and $ 9.5 \pm 0.1 cm$ for B.
+Additionally, the percent error did seem relatively good, being 2.56\% for A and 8.70\% for B.
+Unfortunately, since $1.73$ does not fall within $1.9 \pm 0.1$,
+and also since $9.3$ is not within $9.5 \pm 0.1$, our calculated values do not
+agree within error of our measured values for A and B.
+
+At first glance, the graph (Figure 4) produced from our raw data (Table 1) seems reasonable, especially
+because all the data points recorded seem to fit nicely on the trendline with
+no anomalous data points compared to the other values. This means that whatever error
+introduced in our measurement of voltages was a constant factor, since we took care
+to measure distances precisely, but relied on the voltmeter for recording voltages.
+It is possible that the voltmeter was miscalibrated, resulting in readings that were slightly off,
+since that would cause us to have potentially set the output voltage of the power supply $V_0$ from being $4.5 V$ to something else,
+and the potential differences $V_r-V_B$ measured would be altered by about the same factor.
+
+\subsection{Part 2}
 From figure 5, we can see how the equipotential lines along the capacitor show that the
 electric field close to the center of the parallel plate capacitor is almost uniform, and
-how we get fringing effects towards the edges of the capacitor, which make the electric field non uniform.
+how we get fringing effects towards the edges of the capacitor, which make the electric field non uniform
+at the edge of the parallel plate capacitor.
 
-----
-% The results from the lab overall seemed reasonable, because the data fit pretty nicely to the curves that we expected them to in the graph. ET was fit to a linear curve, and EK and EP were fit to quadratic curves.  (Fig.2).  The value calculated for energy loss per second from the graph (-0.44739±0.510812 J/s) does not agree within error of the expected value we calculated (0.00161 J/s) which was calculated by measuring the initial and final displacement of the bob on the pendulum after 25 periods, finding the initial and final potential energies, calculating the total time for 25 periods, and then finding the average energy loss per second. The calculated value from the graph is 3 orders of magnitude different. However, given that the slope of the graph(fig.4) seemed almost flat, the data still seems somewhat reasonable.
-%
-% We did, however have to omit 4 anomalous data points from the curve fits, because it is very unlikely that the bob was moving about 12 or 25 m/s at any point along the track. These anomalous data points can be attributed to the spark timer missing two sparks, since one missing spark would significantly impact two data points for the instantaneous velocity, since the bob would appear to move a lot faster than it actually did for two data points. It appears to move faster since the instantaneous velocity is calculated using the data points from before and after spark n, and a missing spark in the data makes it seem that the bob is moving a greater distance in a shorter time than it actually is. (see eq. 4). Two missing sparks would have caused four calculated instantaneous velocities to be significantly higher than they should be, and since instantaneous velocity is used to calculate EK on the graph, EK at the two points where the spark was missed would be significantly higher than they should be. Once can even see on the graph that the four anomalous data points are in pairs of two. (One at 20-25 J and the other at 10-15 J). Because ET includes EK, there are four anomalous data points for ET as well, at the exact same time.  Hence, these data points were ignored when fitting curves to the data.
-%
-% On the graph (fig.4), we would expect to see ET as a constant, horizontal line, and indeed, the linear fit seems to be almost horizontal. The line is not horizontal, however, and it has a slight downwards slope of -0.44739±0.510812 J/s . This is due to the loss of energy. In an ideal scenario, with no energy loss, the line should be perfectly flat, however energy was being lost due to factors such as air friction, friction with the bob on the track, and vibrations on the string. At t=0, we see that ET and EK are almost the same values, as we would expect since at the beginning, the bob is not moving, so EK would be zero. (Also confirmed on the graph.) As the bob is moving down, we would expect EP to be converted into EK, and we see that on the graph, EP is decreasing as EK increases, up until EP is about 0 and EK is almost equal to ET, which is definitely observed on the graph. After that point, one would expect, and can also see on the graph that EK would be converted back into EP, until EK is almost 0, and EP is about ET. This data agrees with the law of conservation of energy, as we can visually see from the graph what types of energy are being converted, whilst observing the total energy being almost constant. (Since we are not working in an ideal scenario, and energy is lost due to factors such as friction.)
-
+\textit{The value of the voltage V is consant along an equipotential line.
+Is the value of the field strength E necessarily constant along an electric field line?}\\
+\textbf{A:}
+I'm 90\% sure No but idk why \\ \\
+\textit{Describe the effect of the radius of curvature of a conductor on the concentation of charges}\\
+\textbf{A:}
+Umm the larger the radius, the thinner distribution of charge?! IDK
 \section{Conclusions}
+In Experiment 1, we first measure potential differences at various radii on a circular capacitor,
+and use Gauss's Law to calculate the inner and outer radii of the capacitor. We then check these predictions
+by physically measuring the inner and outer radii of the circular capacitor. Although our data seemed
+fine, our calculations did not agree within error of the measured values. Our inner radius was calculated to be
+$1.73 \pm 0.03 cm$, while our measured value was $1.9 \pm 0.1 cm$, and the outer radius of the circular capacitor
+was calculated as $9.3 \pm 0.1 cm$, while the measured value was $9.5 \pm 0.1 cm$. Since our resulting graph (Figure 4)
+was linear as expected. with no anomalous data points, the source of error was a constant factor, and therefore can
+likely be attributed to a faulty voltmeter.
 
-almost done
-actually I still have hours before I finish this :(((
+Next, we measured potential differences at various points on a parallel plate capacitor, and used the data to generate
+a graph which allows us to visualize the equipotential lines. The same data was also used to generate a 3 dimensional
+plot of the potential differences as a function of the horizontal and vertical position of the probe on the parallel plate
+capacitor. This allows us to visualize the electric potential on the capacitor.
   % In lab 8, we set up a pendulum with a 2.3kg bob hanging off of a string, and put an arced track such that the bob would be close enough to the track at any point while it swings to make a spark, with a spark timer. We then used an electromagnet to release the bob from rest, and used the spark timer to keep track of the bob’s displacements, and since the spark timer sparks at regular intervals, we had enough data to generate plots in Excel of potential energy, kinetic energy, and total energy as functions of time. The law of conservation of energy says that energy cannot be created or destroyed, but it can be converted. Theoretically, all of the Pe at the beginning should convert completely into KE, and then towards the end, all of the KE that the bob has should convert back into PE. Indeed, we do observe this behaviour in the lab, albeit not perfectly, since energy is also lost due to some of it being converted to other forms such as friction. This caused TE to decrease over time. Additionally, there were some anomalous data points that can be attributed to the spark timer missing sparks. Overall, however, the data seemed reasonable, albeit the amount of energy lost per second using the graph’s data versus taking an average after 25 periods did seem to disagree with 3 orders of magnitude.  One can observe the physics principles explored in the lab in real-life such as on a rollercoaster, where the gravitational potential energy is also converted into kinetic energy and vice versa such as when the car is going through a loop.
 \bibliography{references}
 \end{document}
