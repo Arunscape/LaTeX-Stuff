@@ -180,19 +180,19 @@ voltage differences were recorded in a spreadsheet, from which Figures 5 and 6 w
 \section{Results}
 
 
-Should be a coherent text\\
-Present all data and calculations with words. Examples:\\
-○ “Row data for free-fall acceleration measurements is given by Table 1.”\\
-○ “In order to find the acceleration we plot doulbed distance as a function of
-time squired as is shown by Figure 1.” or “To find the acceleration we
-linearize Equation 1 as d(x)=ax, where x=t2/2 and plot it on Figure 1”.\\
-○ “The slope of the graph corresponds to the acceleration and can be found
-along with the uncertainty using LINEST(see Table 2)”\\
-○ “The uncertainty in distance is calculated as d= x+ y”\\
-○ “Finally, the acceleration due to gravity is 9.81± 0.03 m/s2 ”\\
-All figures and should have label and caption \\(e.g. “Figure 1: position as a function
-of time during free fall”).\\
-Use scientific notation (103, not 1E3) and appropriate significant digits
+% Should be a coherent text\\
+% Present all data and calculations with words. Examples:\\
+% ○ “Row data for free-fall acceleration measurements is given by Table 1.”\\
+% ○ “In order to find the acceleration we plot doulbed distance as a function of
+% time squired as is shown by Figure 1.” or “To find the acceleration we
+% linearize Equation 1 as d(x)=ax, where x=t2/2 and plot it on Figure 1”.\\
+% ○ “The slope of the graph corresponds to the acceleration and can be found
+% along with the uncertainty using LINEST(see Table 2)”\\
+% ○ “The uncertainty in distance is calculated as d= x+ y”\\
+% ○ “Finally, the acceleration due to gravity is 9.81± 0.03 m/s2 ”\\
+% All figures and should have label and caption \\(e.g. “Figure 1: position as a function
+% of time during free fall”).\\
+% Use scientific notation (103, not 1E3) and appropriate significant digits
 
 \section{Part 1}
 % Part I\\
@@ -244,9 +244,10 @@ slope of the graph is $\ln{\frac{A}{B}}$, and the y-intercept is $\ln{(B)}$
 
 \begin{table}[H]
 \centering
+Using Excel's LINEST function, we can obtain the following data from the graph in Figure 4.
 \begin{tabular}{cc}
-  Slope     & -1.674456326\pm0.03399955317 \\
-  Intercept &  2.225330849\pm0.01408922355 \\
+  Slope     & $-1.674456326\pm0.03399955317$ \\
+  Intercept &  $2.225330849\pm0.01408922355$ \\
 \end{tabular}
 \caption{LINEST data from the graph in Figure 4}
 \end{table}
@@ -262,7 +263,7 @@ The percent error is:
 $$ \frac{|9.25654481406370-9.5|}{9.5}\times100 = 2.56\%$$
 To obtain the calculated value for $A$, we see that from our LINEST data (Table 2) the slope $\ln{\frac{A}{B}}=-1.674456326$
 Thus, the calculated value of $A$ can be found by
-$$ e^{\ln{\frac{A}{B}}}}=e^{-1.674456326} = \frac{A}{B} = 0.1874100418... $$
+$$ e^{\ln{\frac{A}{B}}}=e^{-1.674456326} = \frac{A}{B} = 0.1874100418... $$
 $$ B \times \frac{A}{B} = A = 9.25654481406370 \times 0.1874100418 = 1.73476945...$$
 So, $A=1.7\pm NUMBER cm$ is the value for outer radius $A$ obtained from the graph.
 The percent error is:
@@ -272,46 +273,90 @@ The calculated values of $A$ and $B$ are summarized in Table 3.
 \centering
 \begin{tabular}{c|c|c|c|}
                 & Measured            & Obtained from graph: & \% Error \\ \hline
-Inner radius A: & 1.9 \pm 0.1 cm      & 9.3 \pm XX           &    2.56  \\ \hline
-Outer radius B: & 9.5 \pm 0.1 cm      & 1.7 \pm XX           &    8.70  \\ \hline
+Inner radius A: & $1.9 \pm 0.1 cm$      & $9.3 \pm XX$           &    $2.56$  \\ \hline
+Outer radius B: & $9.5 \pm 0.1 cm$      & $1.7 \pm XX$           &    $8.70$  \\ \hline
 \end{tabular}
 \caption{Measured values of $A$ and $B$ compared to the calculated values obtained from the graph.}
 \end{table}
 
 \section{Part 2}
-Part II\\
-Provide graph from the template\\
-By hand draw field lines, show charge
-distribution, etc.\\
-Provide the explanation, calculations,
-answer questions in Discussion.\\
+% Part II\\
+% Provide graph from the template\\
+% By hand draw field lines, show charge
+% distribution, etc.\\
+% Provide the explanation, calculations,
+% answer questions in Discussion.\\
 
+Raw data recorded while measuring potential differences at various points on
+the parallel plate capacitor is given by Table 4. Each cell corresponds to one
+of the points on the grid as seen in Figure 3.
 
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+   & A    & B    & C    & D    & E    & F    & G    & H    & H'   & G'   & F'   & E'   & D'   & C'   & B'   & A'   \\ \hline
+1  & 0.51 & 0.60 & 0.71 & 0.92 & 1.14 & 1.38 & 1.72 & 2.30 & 2.20 & 2.78 & 3.12 & 3.36 & 3.58 & 3.79 & 3.90 & 3.99 \\ \hline
+2  & 0.46 & 0.53 & 0.58 & 0.76 & 0.92 & 1.28 & 1.67 & 2.24 & 2.26 & 2.83 & 3.22 & 3.58 & 3.74 & 3.92 & 3.97 & 4.04 \\ \hline
+3  & 0.40 & 0.42 & 0.43 & 0.46 & 0.60 & 1.09 & 1.62 & 2.16 & 2.34 & 2.88 & 3.41 & 3.90 & 4.04 & 4.07 & 4.08 & 4.10 \\ \hline
+4  & 0.33 & 0.30 & 0.25 & 0.00 & 0.00 & 0.87 & 1.47 & 2.13 & 2.37 & 3.03 & 3.63 & 4.50 & 4.50 & 4.25 & 4.20 & 4.17 \\ \hline
+5  & 0.27 & 0.22 & 0.14 & 0.00 & 0.00 & 0.78 & 1.42 & 2.06 & 2.44 & 3.08 & 3.72 & 4.50 & 4.50 & 4.36 & 4.28 & 4.23 \\ \hline
+6  & 0.23 & 0.17 & 0.09 & 0.00 & 0.00 & 0.75 & 1.36 & 2.04 & 2.46 & 3.14 & 3.75 & 4.50 & 4.50 & 4.41 & 4.33 & 4.27 \\ \hline
+7  & 0.21 & 0.14 & 0.08 & 0.00 & 0.00 & 0.79 & 1.37 & 2.03 & 2.47 & 3.13 & 3.71 & 4.50 & 4.50 & 4.42 & 4.36 & 4.29 \\ \hline
+8  & 0.18 & 0.13 & 0.00 & 0.00 & 0.00 & 0.71 & 1.38 & 2.04 & 2.46 & 3.12 & 3.79 & 4.50 & 4.50 & 4.50 & 4.37 & 4.32 \\ \hline
+9  & 0.16 & 0.10 & 0.00 & 0.00 & 0.00 & 0.71 & 1.29 & 2.05 & 2.45 & 3.21 & 3.79 & 4.50 & 4.50 & 4.50 & 4.40 & 4.34 \\ \hline
+9' & 0.16 & 0.10 & 0.00 & 0.00 & 0.00 & 0.71 & 1.29 & 2.05 & 2.45 & 3.21 & 3.79 & 4.50 & 4.50 & 4.50 & 4.40 & 4.34 \\ \hline
+8' & 0.18 & 0.13 & 0.00 & 0.00 & 0.00 & 0.71 & 1.38 & 2.04 & 2.46 & 3.12 & 3.79 & 4.50 & 4.50 & 4.50 & 4.37 & 4.32 \\ \hline
+7' & 0.21 & 0.14 & 0.08 & 0.00 & 0.00 & 0.79 & 1.37 & 2.03 & 2.47 & 3.13 & 3.71 & 4.50 & 4.50 & 4.36 & 4.36 & 4.29 \\ \hline
+6' & 0.23 & 0.17 & 0.09 & 0.00 & 0.00 & 0.75 & 1.36 & 2.04 & 2.46 & 3.14 & 3.75 & 4.50 & 4.50 & 4.41 & 4.33 & 4.27 \\ \hline
+5' & 0.27 & 0.22 & 0.14 & 0.00 & 0.00 & 0.78 & 1.42 & 2.06 & 2.44 & 3.08 & 3.72 & 4.50 & 4.50 & 4.36 & 4.28 & 4.23 \\ \hline
+4' & 0.33 & 0.30 & 0.25 & 0.00 & 0.00 & 0.87 & 1.47 & 2.13 & 2.37 & 3.03 & 3.63 & 4.50 & 4.50 & 4.25 & 4.20 & 4.17 \\ \hline
+3' & 0.40 & 0.42 & 0.43 & 0.46 & 0.60 & 1.09 & 1.62 & 2.16 & 2.34 & 2.88 & 3.41 & 3.90 & 4.04 & 4.07 & 4.08 & 4.10 \\ \hline
+2' & 0.46 & 0.53 & 0.58 & 0.76 & 0.92 & 1.28 & 1.67 & 2.24 & 2.26 & 2.83 & 3.22 & 3.58 & 3.74 & 3.92 & 3.97 & 4.04 \\ \hline
+1' & 0.51 & 0.60 & 0.71 & 0.92 & 1.14 & 1.38 & 1.72 & 2.30 & 2.20 & 2.78 & 3.12 & 3.36 & 3.58 & 3.79 & 3.90 & 3.99 \\ \hline
+\end{tabular}%
+}
+\caption{Raw data recorded when measuring potential differences at various points on the parallel plate capacitor.}
+\end{table}
 
-
+From the above data, the following graph was generated in Figure 5, which shows the electric
+equipotential lines along the capacitor.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{chart2.png}
-  \caption{Measuring the voltage difference in a region between two parallel conductors.}
+  \includegraphics[width=.9\textwidth]{chart2.png}
+  \caption{A visual representation of the electric equipotential lines between the plates of the capacitor. This figure was generated using the data in Table 4.}
 \end{figure}
+
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{chart3.png}
-  \caption{Measuring the voltage difference in a region between two parallel conductors.}
+  \caption{An equipotential surface map generated from the data in Table 4 above}
 \end{figure}
 
 
 
 \section{Discussion}
-The results from the lab overall seemed reasonable, because the data fit pretty nicely to the curves that we expected them to in the graph. ET was fit to a linear curve, and EK and EP were fit to quadratic curves.  (Fig.2).  The value calculated for energy loss per second from the graph (-0.44739±0.510812 J/s) does not agree within error of the expected value we calculated (0.00161 J/s) which was calculated by measuring the initial and final displacement of the bob on the pendulum after 25 periods, finding the initial and final potential energies, calculating the total time for 25 periods, and then finding the average energy loss per second. The calculated value from the graph is 3 orders of magnitude different. However, given that the slope of the graph(fig.4) seemed almost flat, the data still seems somewhat reasonable.
+referring to table 3, our calculated results seemed fairly close to the measured
+----
+From figure 5, we can see how the equipotential lines along the capacitor show that the
+electric field close to the center of the parallel plate capacitor is almost uniform, and
+how we get fringing effects towards the edges of the capacitor, which make the electric field non uniform.
 
-We did, however have to omit 4 anomalous data points from the curve fits, because it is very unlikely that the bob was moving about 12 or 25 m/s at any point along the track. These anomalous data points can be attributed to the spark timer missing two sparks, since one missing spark would significantly impact two data points for the instantaneous velocity, since the bob would appear to move a lot faster than it actually did for two data points. It appears to move faster since the instantaneous velocity is calculated using the data points from before and after spark n, and a missing spark in the data makes it seem that the bob is moving a greater distance in a shorter time than it actually is. (see eq. 4). Two missing sparks would have caused four calculated instantaneous velocities to be significantly higher than they should be, and since instantaneous velocity is used to calculate EK on the graph, EK at the two points where the spark was missed would be significantly higher than they should be. Once can even see on the graph that the four anomalous data points are in pairs of two. (One at 20-25 J and the other at 10-15 J). Because ET includes EK, there are four anomalous data points for ET as well, at the exact same time.  Hence, these data points were ignored when fitting curves to the data.
-
-On the graph (fig.4), we would expect to see ET as a constant, horizontal line, and indeed, the linear fit seems to be almost horizontal. The line is not horizontal, however, and it has a slight downwards slope of -0.44739±0.510812 J/s . This is due to the loss of energy. In an ideal scenario, with no energy loss, the line should be perfectly flat, however energy was being lost due to factors such as air friction, friction with the bob on the track, and vibrations on the string. At t=0, we see that ET and EK are almost the same values, as we would expect since at the beginning, the bob is not moving, so EK would be zero. (Also confirmed on the graph.) As the bob is moving down, we would expect EP to be converted into EK, and we see that on the graph, EP is decreasing as EK increases, up until EP is about 0 and EK is almost equal to ET, which is definitely observed on the graph. After that point, one would expect, and can also see on the graph that EK would be converted back into EP, until EK is almost 0, and EP is about ET. This data agrees with the law of conservation of energy, as we can visually see from the graph what types of energy are being converted, whilst observing the total energy being almost constant. (Since we are not working in an ideal scenario, and energy is lost due to factors such as friction.)
+----
+% The results from the lab overall seemed reasonable, because the data fit pretty nicely to the curves that we expected them to in the graph. ET was fit to a linear curve, and EK and EP were fit to quadratic curves.  (Fig.2).  The value calculated for energy loss per second from the graph (-0.44739±0.510812 J/s) does not agree within error of the expected value we calculated (0.00161 J/s) which was calculated by measuring the initial and final displacement of the bob on the pendulum after 25 periods, finding the initial and final potential energies, calculating the total time for 25 periods, and then finding the average energy loss per second. The calculated value from the graph is 3 orders of magnitude different. However, given that the slope of the graph(fig.4) seemed almost flat, the data still seems somewhat reasonable.
+%
+% We did, however have to omit 4 anomalous data points from the curve fits, because it is very unlikely that the bob was moving about 12 or 25 m/s at any point along the track. These anomalous data points can be attributed to the spark timer missing two sparks, since one missing spark would significantly impact two data points for the instantaneous velocity, since the bob would appear to move a lot faster than it actually did for two data points. It appears to move faster since the instantaneous velocity is calculated using the data points from before and after spark n, and a missing spark in the data makes it seem that the bob is moving a greater distance in a shorter time than it actually is. (see eq. 4). Two missing sparks would have caused four calculated instantaneous velocities to be significantly higher than they should be, and since instantaneous velocity is used to calculate EK on the graph, EK at the two points where the spark was missed would be significantly higher than they should be. Once can even see on the graph that the four anomalous data points are in pairs of two. (One at 20-25 J and the other at 10-15 J). Because ET includes EK, there are four anomalous data points for ET as well, at the exact same time.  Hence, these data points were ignored when fitting curves to the data.
+%
+% On the graph (fig.4), we would expect to see ET as a constant, horizontal line, and indeed, the linear fit seems to be almost horizontal. The line is not horizontal, however, and it has a slight downwards slope of -0.44739±0.510812 J/s . This is due to the loss of energy. In an ideal scenario, with no energy loss, the line should be perfectly flat, however energy was being lost due to factors such as air friction, friction with the bob on the track, and vibrations on the string. At t=0, we see that ET and EK are almost the same values, as we would expect since at the beginning, the bob is not moving, so EK would be zero. (Also confirmed on the graph.) As the bob is moving down, we would expect EP to be converted into EK, and we see that on the graph, EP is decreasing as EK increases, up until EP is about 0 and EK is almost equal to ET, which is definitely observed on the graph. After that point, one would expect, and can also see on the graph that EK would be converted back into EP, until EK is almost 0, and EP is about ET. This data agrees with the law of conservation of energy, as we can visually see from the graph what types of energy are being converted, whilst observing the total energy being almost constant. (Since we are not working in an ideal scenario, and energy is lost due to factors such as friction.)
 
 \section{Conclusions}
-  In lab 8, we set up a pendulum with a 2.3kg bob hanging off of a string, and put an arced track such that the bob would be close enough to the track at any point while it swings to make a spark, with a spark timer. We then used an electromagnet to release the bob from rest, and used the spark timer to keep track of the bob’s displacements, and since the spark timer sparks at regular intervals, we had enough data to generate plots in Excel of potential energy, kinetic energy, and total energy as functions of time. The law of conservation of energy says that energy cannot be created or destroyed, but it can be converted. Theoretically, all of the Pe at the beginning should convert completely into KE, and then towards the end, all of the KE that the bob has should convert back into PE. Indeed, we do observe this behaviour in the lab, albeit not perfectly, since energy is also lost due to some of it being converted to other forms such as friction. This caused TE to decrease over time. Additionally, there were some anomalous data points that can be attributed to the spark timer missing sparks. Overall, however, the data seemed reasonable, albeit the amount of energy lost per second using the graph’s data versus taking an average after 25 periods did seem to disagree with 3 orders of magnitude.  One can observe the physics principles explored in the lab in real-life such as on a rollercoaster, where the gravitational potential energy is also converted into kinetic energy and vice versa such as when the car is going through a loop.
+
+almost done
+actually I still have hours before I finish this :(((
+  % In lab 8, we set up a pendulum with a 2.3kg bob hanging off of a string, and put an arced track such that the bob would be close enough to the track at any point while it swings to make a spark, with a spark timer. We then used an electromagnet to release the bob from rest, and used the spark timer to keep track of the bob’s displacements, and since the spark timer sparks at regular intervals, we had enough data to generate plots in Excel of potential energy, kinetic energy, and total energy as functions of time. The law of conservation of energy says that energy cannot be created or destroyed, but it can be converted. Theoretically, all of the Pe at the beginning should convert completely into KE, and then towards the end, all of the KE that the bob has should convert back into PE. Indeed, we do observe this behaviour in the lab, albeit not perfectly, since energy is also lost due to some of it being converted to other forms such as friction. This caused TE to decrease over time. Additionally, there were some anomalous data points that can be attributed to the spark timer missing sparks. Overall, however, the data seemed reasonable, albeit the amount of energy lost per second using the graph’s data versus taking an average after 25 periods did seem to disagree with 3 orders of magnitude.  One can observe the physics principles explored in the lab in real-life such as on a rollercoaster, where the gravitational potential energy is also converted into kinetic energy and vice versa such as when the car is going through a loop.
 \bibliography{references}
 \end{document}
