@@ -259,7 +259,7 @@ Using Excel's LINEST function, we can obtain the following data from the graph i
 
 From our LINEST data (Table 2), we can see that the y-intercept $\ln{(B)}=2.22533084879698$
 Thus, the calculated value of $B$ from the graph can be found by exponentiating $\ln{(B)}$.\\
-  $$B= e^{ln(B)} = e^{2.22533084879698}=9.25654481406370...\approx 9.3$$
+  $$B= e^{ln(B)} = e^{2.22533084879698}=9.25654481406370...$$
 And the error $\delta B$ can be calculated:
 $$ \delta \ln{(B)} = \frac{\delta B}{|B|}$$
 $$ \therefore \delta B = \delta \ln{(B)} \times |B| = 0.01408922355 \times 9.25654481406370 = 0.13041752...\approx 0.1  $$
@@ -336,8 +336,8 @@ of the points on the grid as seen in Figure 3.
 \caption{Raw data recorded when measuring potential differences at various points on the parallel plate capacitor.}
 \end{table}
 \newpage
-From the above data, the following graph was generated in Figure 5, which shows the electric
-equipotential lines along the capacitor.
+From the above data, the following graph was generated in Figure 5, which gives a visual representation of the electric
+equipotential lines on the capacitor.
 
 \begin{figure}[H]
   \centering
@@ -383,17 +383,29 @@ angles could change the measured potential difference. We did our best to keep t
 
 \subsection{Part 2}
 From figure 5, we can see how the equipotential lines along the capacitor show that the
-electric field close to the center of the parallel plate capacitor is almost uniform, and
+electric field close to the center of the parallel plate capacitor is almost uniform because they are almost parallel, and
 how we get fringing effects towards the edges of the capacitor, which make the electric field non uniform
-at the edge of the parallel plate capacitor.
-
+in that area. This aligns well with what we have learned so far in the lecture part of this course.
+\\ \\
+\textbf{Questions: }\\ \\
 \textit{The value of the voltage V is consant along an equipotential line.
 Is the value of the field strength E necessarily constant along an electric field line?}\\
 \textbf{A:}
-I'm 90\% sure No but idk why \\ \\
+\textbf{DOUBLE CHECK THIS} No. In Figure 5, we can see that
+the nearly parallel lines close to the center of the capacitor mean that the electric field E is constant.
+However, towards the edges of the conducting plates (Top and bottom part in Figure 5), the equipotential lines
+curve due to fringing effects. As a result, E is no longer constant, since the equipotential lines
+are no longer parallel to each other. This means that if V is constant along an equipotential line,
+E is not necessarily constant as well.\\ \\
 \textit{Describe the effect of the radius of curvature of a conductor on the concentation of charges}\\
 \textbf{A:}
-Umm the larger the radius, the thinner distribution of charge?! IDK
+The condition for electrostatic equilibrium is that no charges are moving. For conductors, this means
+that electrons are pushed towards the surface. Consider one electron at the surface of the conductor.
+If there is curvature, there will be a parallel force acting on the electron due to other neighbouring
+electrons because of Coulomb's Law. Areas that have smaller radii of curvature, however, the
+parallel force is smaller. The net effect is an accumilation of charges in regoins on the conductor with
+smaller radii of curvature.
+
 \section{Conclusions}
 In Experiment 1, we first measure potential differences at various radii on a circular capacitor,
 and use Gauss's Law to calculate the inner and outer radii of the capacitor. We then check these predictions
