@@ -40,10 +40,10 @@
         PHYS 230 Lab EH71
         \vspace{1cm}
 
-        TA: Andrei Tetriakov
+        TA: Andrei Tretiakov
         \vspace{1cm}
 
-        Date of Lab: \today
+        Date of Lab: February 15, 2018%\today
         \vfill
     \end{center}
 \end{titlepage}
@@ -87,7 +87,7 @@ length $L$ with flat end caps. Since \textbf{E} is parallel to the end caps, the
 the end caps are zero, which leaves the curved surface of the cylinder, with area $2\pi rL$.
 Since \textbf{E} is constant and perpendicular to the curved surface, the total flux $\Phi_E$ can be found
 \begin{equation}
-  \Phi_E = \Phi_{end1} + \Phi_cylinder + \Phi_{end2} = 0+E(2\pi rL) + 0 =\frac{Q}{\epsilon_0}
+  \Phi_E = \Phi_{end1} + \Phi_{cylinder} + \Phi_{end2} = 0+E(2\pi rL) + 0 =\frac{Q}{\epsilon_0}
 \end{equation}
 \begin{figure}[H]
     \centering
@@ -143,11 +143,12 @@ potential difference is constant at any point on the surface.
   \item Parallel plate capacitor (Figure 3)
   \item Power Supply
   \item Voltmeter
+  \item Banana plugs and Probe
 \end{itemize}
 For both parts of the experiment, the power supply was set to 4.5V. \\This is $V_0$ in equations 5 and 6.
 \newpage
 \subsection{Part 1}
-In Part 1 of the experiment, a circuit was constructed using the above materials, as shown in the Figure 2 below.
+In Part 1 of the experiment, a circuit was constructed using the listed materials above, as shown in the Figure 2 below.
 The positive lead of the power supply was connected to the center of the circular capacitor, and the negative lead
 was connected to the negative end on the voltmeter, and a probe was attached to the positive end of the voltmeter.
 The probe was then touched at various radii on the circular capacitor, and the measured voltages were recorded in
@@ -246,7 +247,7 @@ slope of the graph is $\ln{\frac{A}{B}}$, and the y-intercept is $\ln{(B)}$
   \caption{Measuring the voltage difference in a region between two parallel conductors.}
 \end{figure}
 \newpage
-Using Excel's LINEST function, we can obtain the following data from the graph in Figure 4.
+\noindent Using Excel's LINEST function, we obtain the following data from the graph in Figure 4.
 \begin{table}[H]
 \centering
 \begin{tabular}{cc}
@@ -257,7 +258,7 @@ Using Excel's LINEST function, we can obtain the following data from the graph i
 \end{table}
 
 
-From our LINEST data (Table 2), we can see that the y-intercept $\ln{(B)}=2.22533084879698$
+\noindent From our LINEST data (Table 2), we can see that the y-intercept $\ln{(B)}=2.22533084879698$ .
 Thus, the calculated value of $B$ from the graph can be found by exponentiating $\ln{(B)}$.\\
   $$B= e^{ln(B)} = e^{2.22533084879698}=9.25654481406370...$$
 And the error $\delta B$ can be calculated:
@@ -383,31 +384,31 @@ angles could change the measured potential difference. We did our best to keep t
 
 \subsection{Part 2}
 From figure 5, we can see how the equipotential lines along the capacitor show that the
-electric field close to the center of the parallel plate capacitor is almost uniform because they are almost parallel, and
+electric field close to the center of the parallel plate capacitor is almost uniform, and
 how we get fringing effects towards the edges of the capacitor, which make the electric field non uniform
 in that area. This aligns well with what we have learned so far in the lecture part of this course.
 \\ \\
 The magnitude of the electric field is strongest where the equipotential lines are the closest.\\
-Using equation 1,
+Using equation 1 with cells E4 and F4 in Table 4,
 $$ E=-\frac{\Delta V}{\Delta s}= -\frac{0.87 V -0.00 V}{0.95\times 10^{-2} m} = -91.58 \:V/m $$
 \\ \\
 \textbf{Questions: }\\ \\
 \textit{The value of the voltage V is consant along an equipotential line.
 Is the value of the field strength E necessarily constant along an electric field line?}\\
 \textbf{A:}
-\textbf{DOUBLE CHECK THIS} No. In Figure 5, we can see that
-the nearly parallel lines close to the center of the capacitor mean that the electric field E is constant.
+No. In Figure 5, we can see that
+the nearly parallel lines close to the center of the capacitor with equal separation mean that the electric field E is constant.
 However, towards the edges of the conducting plates (Top and bottom part in Figure 5), the equipotential lines
-curve due to fringing effects. As a result, E is no longer constant, since the equipotential lines
-are no longer parallel to each other. This means that if V is constant along an equipotential line,
-E is not necessarily constant as well.\\ \\
+curve due to fringing effects causing the separation of the equipotential lines to not be constant. As a result, E is no longer constant.
+This means that if V is constant along an equipotential line,
+E is not necessarily constant.\\ \\
 \textit{Describe the effect of the radius of curvature of a conductor on the concentation of charges}\\
 \textbf{A:}
 The condition for electrostatic equilibrium is that no charges are moving. For conductors, this means
 that electrons are pushed towards the surface. Consider one electron at the surface of the conductor.
 If there is curvature, there will be a parallel force acting on the electron due to other neighbouring
-electrons because of Coulomb's Law. Areas that have smaller radii of curvature, however, the
-parallel force is smaller. The net effect is an accumilation of charges in regoins on the conductor with
+electrons because of Coulomb's Law. For areas that have smaller radii of curvature, however, the
+parallel force is smaller. The net effect is an accumulation of charges in regions on the conductor with
 smaller radii of curvature.
 
 \section{Conclusions}
@@ -424,7 +425,7 @@ We did our best to keep these factors constant by taking multiple measurements.
 
 Next, we measured potential differences at various points on a parallel plate capacitor, and used the data to generate
 a graph which allows us to visualize the equipotential lines. The same data was also used to generate a 3 dimensional
-plot of the potential differences as a function of the horizontal and vertical position of the probe on the parallel plate
+surface plot of the potential differences as a function of the horizontal and vertical position of the probe on the parallel plate
 capacitor. This allows us to visualize the electric potential on the capacitor.
   % In lab 8, we set up a pendulum with a 2.3kg bob hanging off of a string, and put an arced track such that the bob would be close enough to the track at any point while it swings to make a spark, with a spark timer. We then used an electromagnet to release the bob from rest, and used the spark timer to keep track of the bob’s displacements, and since the spark timer sparks at regular intervals, we had enough data to generate plots in Excel of potential energy, kinetic energy, and total energy as functions of time. The law of conservation of energy says that energy cannot be created or destroyed, but it can be converted. Theoretically, all of the Pe at the beginning should convert completely into KE, and then towards the end, all of the KE that the bob has should convert back into PE. Indeed, we do observe this behaviour in the lab, albeit not perfectly, since energy is also lost due to some of it being converted to other forms such as friction. This caused TE to decrease over time. Additionally, there were some anomalous data points that can be attributed to the spark timer missing sparks. Overall, however, the data seemed reasonable, albeit the amount of energy lost per second using the graph’s data versus taking an average after 25 periods did seem to disagree with 3 orders of magnitude.  One can observe the physics principles explored in the lab in real-life such as on a rollercoaster, where the gravitational potential energy is also converted into kinetic energy and vice versa such as when the car is going through a loop.
 \bibliography{references}
