@@ -1,0 +1,52 @@
+% Letter class
+\documentclass[letterpaper]{letter}
+
+% Name of sender
+\name{Arun Woosaree}
+
+% Signature of sender
+\signature{Arun Woosaree}
+
+% Address of sender
+\address
+{
+Arun Woosaree\\
+Donadeo Innovation Centre
+for Engineering\\
+9211-116 Street NW\\
+Edmonton, Alberta\\
+Canada T6G 1H9\\
+}
+
+%-----------------------------------------------------------------------------%
+\longindentation=0pt
+\usepackage{block}
+\usepackage{lipsum}
+\usepackage{setspace}
+
+\begin{document}
+
+% Name and address of receiver
+\begin{letter}
+{
+Wayne Defehr\\
+3-5 Humanities Centre\\
+University of Alberta\\
+Edmonton, Alberta\\
+Canada T6G 2E5\\
+}
+
+% Opening statement
+\opening{Dear Mr. Defehr,}
+\doublespacing
+% Letter body
+\lipsum[1]
+
+\lipsum[2]
+
+\lipsum[3]
+% Closing statement
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}
