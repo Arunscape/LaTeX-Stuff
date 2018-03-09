@@ -20,10 +20,10 @@
     \begin{center}
         \vspace*{1cm}
         \Huge
-        Experiment 1
+        Experiment 2
         \vspace{1cm}
 
-        Electrostatic Potentials and Fields
+        Measurements of e/m for Electrons
         \vspace{1cm}
 
         By: Arun Woosaree
@@ -62,68 +62,86 @@
 % Provide equations you used\\
 % ○ Identify all symbols\\
 
-In this experiment, we explore Gauss's Law using a circular capacitor, and
-we map electric potential and the electric field of a parallel plate capacitor.
-A capacitor is essentially two charged conductors separated by some insulator.
-In Part 1, we measure the potential differences in the region between the charged conductors in a circular capacitor,
-and since our geometry is simple, the electric potential can be compared with
-predictions made using Gauss's Law. In Part 2, we make a contour map consisting of equipotential
-curves from our data, which can then be used to construct the corresponding electric field lines
-of the parallel plate capacitor.
-By analyzing field patterns, we can determine the charge distribution on the surface of
-the charged conductors.
+In this experiment, we measure the charge to mass ratio $e/m$ of electrons fired in a
+Helmholtz coil.
+The electrons are emmitted from a hot filament, accelerated by an electric field, and then deflected
+by a magnetic field into a circular orbit. If the radius of this orbit is known,
+as well as the intensity of the magnetic field, and the accelerating potential of the
+electric field, we can determine $e/m$ and the velocity $v$ of the electrons, and an approximate value for
+the earth's magnetic field $B_E$. Using the left-hand-rule for moving charge (since we are
+dealing with electrons), we can also figure out the direction of the magnetic field which deflects the electrons.
+The charge to mass ratio is found using the following equation, of which a derivation exists in the Discussion section.
+The equation below is also linearized, and graphed, from which we obtain an approximate value of the earth's magnetic field
+\begin{equation}
+  \frac{e}{m} = \frac{2V}{(B_H-B_E)^2r^2}
+\end{equation}
+In this equation, $e$ is the charge of an electron, and $m$ is the mass of the electron, XXXXXXXXXXXXXXXXXX`V' is the AC voltage
+, $B_H$ is the magnetic field of the coil, given by
+\begin{equation}
+  B_H=\frac{8\mu_0 NI}{ \sqrt{125} R}
+\end{equation}
+and r is the orbit radius of the electrons. In Equation 2 above, $\mu_0$ is the permeability permeability of free space,
+$N$ is the number of turns in the Helmholtz coil, $R$ is the radius of the coil, and $I$ is the measured current through the
+coil.
 
-The electric field \textbf{E} is defined such that a positive test charge $q$
-placed in the electric field will experience a force $\textbf{F}=q\textbf{E}$.
-Additionally, a certain amount of work $W=F \Delta s=qE\Delta s$ is done to move the charge
-a distance $\Delta s$, parallel to the electrostatic force. The electrostatic force is
-conservative, so the potential energy $U$ must decrease by $\Delta U=-qE\Delta s$.
-$V$, the electric potential is defined to be potential energy per unit charge $V=U/q$.
-The magnitude of an electric field at a point can be related to $V$ by
-\begin{equation}
-  E=-\frac{\Delta V}{\Delta s} \label{eq1}
-\end{equation}
+% we map electric potential and the electric field of a parallel plate capacitor.
+% A capacitor is essentially two charged conductors separated by some insulator.
+% In Part 1, we measure the potential differences in the region between the charged conductors in a circular capacitor,
+% and since our geometry is simple, the electric potential can be compared with
+% predictions made using Gauss's Law. In Part 2, we make a contour map consisting of equipotential
+% curves from our data, which can then be used to construct the corresponding electric field lines
+% of the parallel plate capacitor.
+% By analyzing field patterns, we can determine the charge distribution on the surface of
+% the charged conductors.
 
-Using Gauss's law, in part 1 of the experiment we imagine a Gaussian cylinder enclosing
-the inner and outer conductors of a circular capacitor. This cylinder has a radius $r$ and
-length $L$ with flat end caps. Since \textbf{E} is parallel to the end caps, the flux, denoted $\Phi$ on
-the end caps are zero, which leaves the curved surface of the cylinder, with area $2\pi rL$.
-Since \textbf{E} is constant and perpendicular to the curved surface, the total flux $\Phi_E$ can be found
-\begin{equation}
-  \Phi_E = \Phi_{end1} + \Phi_{cylinder} + \Phi_{end2} = 0+E(2\pi rL) + 0 =\frac{Q}{\epsilon_0}
-\end{equation}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{fig1.jpg}
-    \caption{Helmholtz coil apparatus, and its alignment opposite to earth's magnetic field. \cite{labmanual}}
-\end{figure}
-
-$\sigma$ is defined as the charge per unit area on the surface of the inner conductor.
-The enclosed charge $Q$ enclosed by the Gaussian cylinder is $Q=(2 \pi AL)\sigma$, where
-$A$ is the radius of the inner conductor, and $\epsilon_0=8.85418782 \times 10^{-12} m^{-3} kg^{-1} s^{4} A^{2}$ is the permittivity of free space.
-Given the above information, the magnitude of the electric field at some radius $r$
-can then be computed
-
-\begin{equation}
-  E=\frac{\sigma A}{\epsilon_0 r}
-\end{equation}
-
-If we put a probe at radius $r$, and the outer conductor has a radius $B$ then the voltage
-difference between the probe and the outer conductor is
-\begin{equation}
-  V_r-V_B=\frac{\sigma A}{\epsilon_0 r} \ln{\frac{B}{r}}
-\end{equation}
-From which we can obtain the following equation if we set the voltage difference between the two conductors to have a value $V_0$
-\begin{equation}
-  \frac{V_r-V_B}{V_0}=\frac{\ln{\frac{B}{r}}}{\ln{\frac{B}{A}}}
-\end{equation}
-or alternatively,
-\begin{equation}
-  \ln{r} =\ln{\frac{A}{B}}(\frac{V_r-V_B}{V_0}) + ln{B}
-\end{equation}
-In part 2 of the experiment, we map the electric field of a parallel plate capacitor, and draw equipotential lines
-which correspond to electric field lines. An equipotential surface is defined such that the
-potential difference is constant at any point on the surface.
+% In this ecperiment,
+%
+% The electric field \textbf{E} is defined such that a positive test charge $q$
+% placed in the electric field will experience a force $\textbf{F}=q\textbf{E}$.
+% Additionally, a certain amount of work $W=F \Delta s=qE\Delta s$ is done to move the charge
+% a distance $\Delta s$, parallel to the electrostatic force. The electrostatic force is
+% conservative, so the potential energy $U$ must decrease by $\Delta U=-qE\Delta s$.
+% $V$, the electric potential is defined to be potential energy per unit charge $V=U/q$.
+% The magnitude of an electric field at a point can be related to $V$ by
+% \begin{equation}
+%   E=-\frac{\Delta V}{\Delta s} \label{eq1}
+% \end{equation}
+%
+% Using Gauss's law, in part 1 of the experiment we imagine a Gaussian cylinder enclosing
+% the inner and outer conductors of a circular capacitor. This cylinder has a radius $r$ and
+% length $L$ with flat end caps. Since \textbf{E} is parallel to the end caps, the flux, denoted $\Phi$ on
+% the end caps are zero, which leaves the curved surface of the cylinder, with area $2\pi rL$.
+% Since \textbf{E} is constant and perpendicular to the curved surface, the total flux $\Phi_E$ can be found
+% \begin{equation}
+%   \Phi_E = \Phi_{end1} + \Phi_{cylinder} + \Phi_{end2} = 0+E(2\pi rL) + 0 =\frac{Q}{\epsilon_0}
+% \end{equation}
+%
+% $\sigma$ is defined as the charge per unit area on the surface of the inner conductor.
+% The enclosed charge $Q$ enclosed by the Gaussian cylinder is $Q=(2 \pi AL)\sigma$, where
+% $A$ is the radius of the inner conductor, and $\epsilon_0=8.85418782 \times 10^{-12} m^{-3} kg^{-1} s^{4} A^{2}$ is the permittivity of free space.
+% Given the above information, the magnitude of the electric field at some radius $r$
+% can then be computed
+%
+% \begin{equation}
+%   E=\frac{\sigma A}{\epsilon_0 r}
+% \end{equation}
+%
+% If we put a probe at radius $r$, and the outer conductor has a radius $B$ then the voltage
+% difference between the probe and the outer conductor is
+% \begin{equation}
+%   V_r-V_B=\frac{\sigma A}{\epsilon_0 r} \ln{\frac{B}{r}}
+% \end{equation}
+% From which we can obtain the following equation if we set the voltage difference between the two conductors to have a value $V_0$
+% \begin{equation}
+%   \frac{V_r-V_B}{V_0}=\frac{\ln{\frac{B}{r}}}{\ln{\frac{B}{A}}}
+% \end{equation}
+% or alternatively,
+% \begin{equation}
+%   \ln{r} =\ln{\frac{A}{B}}(\frac{V_r-V_B}{V_0}) + ln{B}
+% \end{equation}
+% In part 2 of the experiment, we map the electric field of a parallel plate capacitor, and draw equipotential lines
+% which correspond to electric field lines. An equipotential surface is defined such that the
+% potential difference is constant at any point on the surface.
 
 
 \section{Experimental Method}
@@ -142,27 +160,31 @@ potential difference is constant at any point on the surface.
 
 \textbf{List of Equipment:}
 \begin{itemize}
-  \item Helmholtz coil apparatus (Figure X)
+  \item Helmholtz coil apparatus (Figures 1 and 2)
   \item AC Voltage Source
-  \item DC Current Source
+  \item DC Voltage Source
   \item Voltmeter
   \item Ammeter
   \item Wires
 \end{itemize}
-For both parts of the experiment, the power supply was set to 4.5V. \\This is $V_0$ in equations 5 and 6.
-\newpage
-% \subsection{Part 1}
-In Part 1 of the experiment, a circuit was constructed using the listed materials above, as shown in the Figure 2 below.
-The positive lead of the power supply was connected to the center of the circular capacitor, and the negative lead
-was connected to the negative end on the voltmeter, and a probe was attached to the positive end of the voltmeter.
-The probe was then touched at various radii on the circular capacitor, and the measured voltages were recorded in
-a spreadsheet. The data was then plotted as the natural log of radius $r$ versus the voltage difference at radius $r$
-to produce a linear graph. (Figure 4) The inner radius $A$ and outer radius $B$ as seen in Figure 1 were measured in centimetres, with a ruler
-that had millimetre markings.
-\begin{figure}[H]
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{fig1.jpg}
+    \caption{Helmholtz coil apparatus, and its alignment opposite to earth's magnetic field. \cite{labmanual}}
+\end{figure}
+
+The Helmholtz coil was set up such that its alignment is approximately
+opposite to the Earth's magnetic field, which in Edmonton means that the coil
+should be tilted upwards at an angle of about 18 degrees relative to the horizontal.
+
+The apparatus involves three separate electrical circuits.
+The filament, anode circuit, and the Helmholtz circuit are connected as outlined
+below in Figure 2.
+\begin{figure}[h!]
     \centering
     \includegraphics[width=.9\textwidth]{fig2.jpg}
-    \caption{The experimental setup \cite{labmanual}}
+    \caption{Circuit wiring for the apparatus \cite{labmanual}}
 \end{figure}
 
 
@@ -244,7 +266,7 @@ Voltage (V) & Current (A) & Peg number & Radius r (cm) \\ \hline
 \end{table}
 
 
-Using the data in Table 1, a linear graph is generated using Equation X,
+Using the data in Table 1, a linear graph is generated with Equation 2,
 which is obtained through a derivation outlined in the discussion section.
 \\The equation is linearized by the following process:
 $$\frac{e}{m} = \frac{2V}{(B_H-B_E)^2 r^2} $$
@@ -253,7 +275,7 @@ $$\frac{2V}{r^2}\frac{m}{e} = (B_H-B_E)^2$$
 $$\sqrt{\frac{2V}{r^2}\frac{m}{e}} = \sqrt{(B_H-B_E)^2}$$
 $$B_H-B_E = \frac{\sqrt{2V}}{r}\sqrt{\frac{m}{e}}$$
 $$B_H= \frac{\sqrt{2V}}{r}\sqrt{\frac{m}{e}}+B_E$$
-By equation X, we know $B_H=\frac{8\mu_0 NI}{ \sqrt{125} R}$, where
+By equation 2, we know $B_H=\frac{8\mu_0 NI}{ \sqrt{125} R}$, where
 $\mu_0 = \SI{4 \pi  e-7}{\tesla\metre\per\ampere}$, $N=72$, and $R=0.33m$ so we generate a graph
 with $\frac{\sqrt{2V}}{r}$ on the X axis using our measured voltage values, and $B_H$ on the Y axis
 using our measured current values.
@@ -275,9 +297,9 @@ using our measured current values.
 
 \noindent To obtain the calculated value for $e/m$, we can see from our LINEST data (Table 2) that the slope, $\sqrt{m/e}$ is
 $\num{2.4267255938411E-06}$.\\
-Thus, the calculated value of $e/m$ can be found using partial derivative formulae:
+Thus, the calculated value of $e/m$ can be found:
 $$ \frac{e}{m} = \left(\sqrt{\frac{m}{e}}\right)^{-2} = 1.69808200223924714236 \times 10^{11} $$
-And the error $\delta \frac{e}{m}$ can be calculated:
+And the error $\delta \frac{e}{m}$ can be calculated using partial derivatives:
 $$slope= \left(\frac{e}{m}\right)^{-1/2}$$
 $$\delta slope = \left| -\frac{1}{2} \left(\frac{e}{m}\right)^{-3/2} \delta \left(\frac{e}{m}\right)\right|$$
 $$ 2 \times \delta slope = \left(\frac{e}{m}\right)^{-3/2} \delta \left(\frac{e}{m}\right) $$
@@ -286,12 +308,12 @@ From our LINEST data (Table 2), we know that $\delta slope = \num{3.506497745708
 $$ \therefore \delta \left(\frac{e}{m}\right) = 2 \times \num{3.50649774570897E-08} \times (\num{1.69808200223924714236e11})^{3/2}$$
 $$= \num{4.90728801640585e9} \approx \num{4.91e9}$$
 Thus, the calculated value for $\frac{e}{m}$ is:
-$$\frac{e}{m}=1.70 \pm \SI{4.91e9}{\coulomb\per\kilogram}$$
+$$\frac{e}{m}=\num{1.70e11} \pm \SI{4.91e9}{\coulomb\per\kilogram}$$
 The percent error is:
 $$ \frac{|\num{1.69808200223924714236e11}-\num{1.76e11}|}{\num{1.76e11}}\times100 = 3.52\%$$
 Obtaining the calculated value and error for $B_E$ is a much simpler matter. We simply
 look at the data generated by LINEST (Table 2).
-$$B_E = \num{4.00E-05}\pm \num{6.40E-06}$$
+$$B_E = \num{4.00E-05}\pm \SI{6.40E-06}{\tesla}$$
 The percent error is:
 $$ \frac{|\num{3.99642631798173E-05}-\num{4.8e-5}|}{\num{4.8e-5}}\times100 = 16.74\%$$
 
@@ -301,8 +323,8 @@ $$ \frac{|\num{3.99642631798173E-05}-\num{4.8e-5}|}{\num{4.8e-5}}\times100 = 16.
 \centering
 \begin{tabular}{c|c|c|c|}
                 & Expected                      & Calculated:                                     & \% Error \\ \hline
-$e/m$: & $\SI{1.76e11}{\coulomb\per\kilogram}$      & $\num{1.76e11} \pm \SI{12345}{\coulomb\per\kilogram}$  &    $3.52$  \\ \hline
-$B_E$: & $4.8 \pm \,\SI{0.3e-5}{\tesla}$           & $4.00 \pm \,\SI{6.40e-6}{\tesla}$                    &   $16.74$  \\ \hline
+$e/m$: & $\SI{1.76e11}{\coulomb\per\kilogram}$      & $\num{1.70e11} \pm \SI{4.91e9}{\coulomb\per\kilogram}$  &    $3.52$  \\ \hline
+$B_E$: & $4.8 \pm \,\SI{0.3e-5}{\tesla}$           & $\num{4.00e-5} \pm \,\SI{6.40e-6}{\tesla}$                    &   $16.74$  \\ \hline
 \end{tabular}
 \caption{Measured values of $e/m$ and $B_E$ compared to the calculated values obtained from the graph.}
 \end{table}
@@ -346,38 +368,64 @@ $B_E$: & $4.8 \pm \,\SI{0.3e-5}{\tesla}$           & $4.00 \pm \,\SI{6.40e-6}{\t
 \section{Discussion}
 
 \subsection{Part 1}
-From Table 3, we can see that our calculated values for the inner radius A
-($1.73 \pm 0.03 cm$)
-and outer radius B
-($9.3 \pm 0.1 cm$) were fairly close to the measured values $1.9 \pm 0.1 cm$ for A
-and $ 9.5 \pm 0.1 cm$ for B.
-Additionally, the percent error did seem relatively good, being 2.56\% for A and 8.70\% for B.
-Unfortunately, since $1.73$ does not fall within $1.9 \pm 0.1$,
-and also since $9.3$ is not within $9.5 \pm 0.1$, our calculated values do not
-agree within error of our measured values for A and B.
 
-At first glance, the graph (Figure 4) produced from our raw data (Table 1) seems reasonable, especially
+
+From Table 3, we can see that our calculated values for $e/m$
+($\num{1.70e11} \pm \SI{4.91e9}{\coulomb\per\kilogram}$)
+and $B_E$
+($\num{4.00e-5} \pm \,\SI{6.40e-6}{\tesla}$) were in the same order of magnitude as the
+expected values. ( $\SI{1.76e11}{\coulomb\per\kilogram}$ for $e/m$
+and $4.8 \pm \,\SI{0.3e-5}{\tesla}$ for $B_E$.)
+Additionally, the percent error for the charge to mass ration seemed relatively good, being 3.52\%.
+However, our calculated value of $B_E$ was a fair bit off, with a 16.74\% error.
+Unfortunately, it is clear that our calculated values do are not within error of the
+expected values.
+
+At first glance, the graph (Figure 3) produced from our raw data (Table 1) seems reasonable, especially
 because all the data points recorded seem to fit nicely on the trendline with
 no anomalous data points compared to the other values. This means that whatever error
 introduced in our measurement of voltages was a constant factor, since we took care
-to measure distances precisely, but relied on the voltmeter for recording voltages.
-It is possible that the voltmeter was miscalibrated, resulting in readings that were slightly off,
-since that would cause us to have potentially set the output voltage of the power supply $V_0$ from being $4.5 V$ to something else,
-and the potential differences $V_r-V_B$ measured would be altered by about the same factor. Additionally,
-it should be noted that when measuring the potential differences, the values read on the voltmeter varied
-wildly, and we had to take multiple measurements, as pressing the probe on the capacitor with varying pressures and
-angles could change the measured potential difference. We did our best to keep these factors constant.
+to measure the currents exactly when the electron loop was on the far side of each peg, as specified in the
+lab manual.There are many potential sources of error, including human error, and potential miscalibration of equipment since we are dealing
+with electrons which are tiny in nature. We did our best to keep these factors constant.
 
-\subsection{Part 2}
-From figure 5, we can see how the equipotential lines along the capacitor show that the
-electric field close to the center of the parallel plate capacitor is almost uniform, and
-how we get fringing effects towards the edges of the capacitor, which make the electric field non uniform
-in that area. This aligns well with what we have learned so far in the lecture part of this course.
-\\ \\
-The magnitude of the electric field is strongest where the equipotential lines are the closest.\\
-Using equation 1 with cells E4 and F4 in Table 4,
-$$ E=-\frac{\Delta V}{\Delta s}= -\frac{0.87 V -0.00 V}{0.95\times 10^{-2} m} = -91.58 \:V/m $$
-\\ \\
+Using the left-hand-rule for moving charge (since we are
+dealing with electrons which have a negative charge), we determine that the net magnetic field \textbf{B}
+points upward, perpendicular to the radius of the coil, or upwards relative to Figure 2.
+
+Equation 1, which which was manupilated to produce our graph can be derived using the following equations:
+
+\noindent When a stream of electrons are accelerated through a potential difference $V$, the maximum
+kinetic energy is given by:
+$$\frac{1}{2}mv^2 = eV$$
+Next, the Lorentz force \textbf{F} is given by:
+$\textbf{F}=q\textbf{v}\times \textbf{B}$
+and since our magnetic field is set up so that \textbf{B} is perpendicular to the motion of the electrons (see Figure 1),
+the magnitude of the force $F$ is given by $$F=qvB$$
+Next, the radius of the circle, which is the path of the electrons in this experiment is such that
+the centripetal acceleration is furnished by the Lorentz force. Therefore, we obtain $$\frac{mv^2}{r}$$.
+
+\noindent To obtain Equation 1, we first rearrange the first of the three equations above and substitute it into the third.
+$$\frac{1}{2}mv^2 = eV \Rightarrow v=\frac{\sqrt{2eV}}{m}$$
+$$\Rightarrow \frac{m(\frac{2eV}{m})}{r}=e\sqrt{\frac{2eV}{m}}B$$
+$$\Rightarrow \frac{4V^2}{r^2}=\frac{2eV}{m}B^2$$
+$$\Rightarrow \frac{e}{m} = \frac{2V}{r^2B^2}$$
+Finally, we notice that since our apparatus is aimed antiparallel to earth's magnetic field, such that
+the magnitude of the total magnetic field $B=B_H-B_E$, and substitute this result in the above equation.
+Finally, we obtain equation 1.
+$$\frac{e}{m} = \frac{2V}{(B_H-B_E)^2r^2}$$
+
+
+% \subsection{Part 2}
+% From figure 5, we can see how the equipotential lines along the capacitor show that the
+% electric field close to the center of the parallel plate capacitor is almost uniform, and
+% how we get fringing effects towards the edges of the capacitor, which make the electric field non uniform
+% in that area. This aligns well with what we have learned so far in the lecture part of this course.
+% \\ \\
+% The magnitude of the electric field is strongest where the equipotential lines are the closest.\\
+% Using equation 1 with cells E4 and F4 in Table 4,
+% $$ E=-\frac{\Delta V}{\Delta s}= -\frac{0.87 V -0.00 V}{0.95\times 10^{-2} m} = -91.58 \:V/m $$
+% \\ \\
 \textbf{Questions: }\\ \\
 \textit{Why is it important to align the Helmholtz coil, so that its field is
         anti-parallel to the earth's magnetic field?}\\
