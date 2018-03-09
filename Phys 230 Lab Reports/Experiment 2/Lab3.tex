@@ -71,16 +71,17 @@ electric field, we can determine $e/m$ and the velocity $v$ of the electrons, an
 the earth's magnetic field $B_E$. Using the left-hand-rule for moving charge (since we are
 dealing with electrons), we can also figure out the direction of the magnetic field which deflects the electrons.
 The charge to mass ratio is found using the following equation, of which a derivation exists in the Discussion section.
-The equation below is also linearized, and graphed, from which we obtain an approximate value of the earth's magnetic field
+The equation below is also linearized, and graphed, from which we obtain an approximate value of the earth's magnetic field using the
+Y-intercept, and $e/m$ from the slope.
 \begin{equation}
   \frac{e}{m} = \frac{2V}{(B_H-B_E)^2r^2}
 \end{equation}
-In this equation, $e$ is the charge of an electron, and $m$ is the mass of the electron, XXXXXXXXXXXXXXXXXX`V' is the AC voltage
+In this equation, $e$ is the charge of an electron, and $m$ is the mass of the electron, `V' is the DC voltage applied to the Helmholtz coil
 , $B_H$ is the magnetic field of the coil, given by
 \begin{equation}
   B_H=\frac{8\mu_0 NI}{ \sqrt{125} R}
 \end{equation}
-and r is the orbit radius of the electrons. In Equation 2 above, $\mu_0$ is the permeability permeability of free space,
+,and r is the orbit radius of the electrons. In Equation 2 above, $\mu_0$ is the permeability permeability of free space,
 $N$ is the number of turns in the Helmholtz coil, $R$ is the radius of the coil, and $I$ is the measured current through the
 coil.
 
@@ -177,15 +178,26 @@ coil.
 The Helmholtz coil was set up such that its alignment is approximately
 opposite to the Earth's magnetic field, which in Edmonton means that the coil
 should be tilted upwards at an angle of about 18 degrees relative to the horizontal.
-
-The apparatus involves three separate electrical circuits.
-The filament, anode circuit, and the Helmholtz circuit are connected as outlined
-below in Figure 2.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=.9\textwidth]{fig2.jpg}
     \caption{Circuit wiring for the apparatus \cite{labmanual}}
 \end{figure}
+The apparatus involves three separate electrical circuits.
+The filament, anode circuit, and the Helmholtz circuit are connected as outlined
+below in Figure 2. We first begin by setting the DC voltage source to 20 V, then modifying the
+AC voltage source to change the radius of the glowing circular electron path. The current going through the
+Helmholtz coil is recorded in a spreadsheet at each point where the loop is on the far side of each peg, with larger
+currents resulting in smaller loops. Then,
+the DC voltage source is set to 30 V, and the Helmholtz current $I$ is measured and recorded at the 5 points again.
+The same process is repeated once more when the DC voltage source is set to 40 V. It should be noted
+that adjusting the brightness control knob, viewing the loop from above, and doing the experiment in a dark
+environment made it easier to view the electron loop.
+Since we have the Helmholtz currents, and the diameter of the pegs in the apparatus are known (and therefore
+the radius of the loops that the electrons make), a linear graph can be created by linearizing equation 1,
+from which we can obtain the charge to mass ratio $e/m$ from the slope, and the earth's magnetic field $B_E$
+from the Y-intercept.
+
 
 
 % \subsection{Part 2}
@@ -225,7 +237,7 @@ below in Figure 2.
 % of time during free fall”).\\
 % Use scientific notation (103, not 1E3) and appropriate significant digits
 
-\subsection{Part 1}
+% \subsection{Part 1}
 % Part I\\
 % Linearized equation: provide
 % all parameters e.g. variables,
@@ -266,7 +278,7 @@ Voltage (V) & Current (A) & Peg number & Radius r (cm) \\ \hline
 \end{table}
 
 
-Using the data in Table 1, a linear graph is generated with Equation 2,
+Using the data in Table 1, a linear graph is generated with Equation 1,
 which is obtained through a derivation outlined in the discussion section.
 \\The equation is linearized by the following process:
 $$\frac{e}{m} = \frac{2V}{(B_H-B_E)^2 r^2} $$
@@ -307,12 +319,12 @@ $$ \therefore \delta \left(\frac{e}{m}\right) = 2 \times \delta slope \left(\fra
 From our LINEST data (Table 2), we know that $\delta slope = \num{3.50649774570897E-08} $
 $$ \therefore \delta \left(\frac{e}{m}\right) = 2 \times \num{3.50649774570897E-08} \times (\num{1.69808200223924714236e11})^{3/2}$$
 $$= \num{4.90728801640585e9} \approx \num{4.91e9}$$
-Thus, the calculated value for $\frac{e}{m}$ is:
+Thus, the calculated value for $\frac{e}{m}$ is:\footnote{Value rounded to three significant digits simply for neatness. Otherwise, the full values were messy and long}
 $$\frac{e}{m}=\num{1.70e11} \pm \SI{4.91e9}{\coulomb\per\kilogram}$$
 The percent error is:
 $$ \frac{|\num{1.69808200223924714236e11}-\num{1.76e11}|}{\num{1.76e11}}\times100 = 3.52\%$$
 Obtaining the calculated value and error for $B_E$ is a much simpler matter. We simply
-look at the data generated by LINEST (Table 2).
+look at the data generated by LINEST, specifically, the Y-intercept (Table 2).
 $$B_E = \num{4.00E-05}\pm \SI{6.40E-06}{\tesla}$$
 The percent error is:
 $$ \frac{|\num{3.99642631798173E-05}-\num{4.8e-5}|}{\num{4.8e-5}}\times100 = 16.74\%$$
@@ -389,9 +401,10 @@ to measure the currents exactly when the electron loop was on the far side of ea
 lab manual.There are many potential sources of error, including human error, and potential miscalibration of equipment since we are dealing
 with electrons which are tiny in nature. We did our best to keep these factors constant.
 
-Using the left-hand-rule for moving charge (since we are
+Using the left-hand-rule for moving a charged particle, (since we are
 dealing with electrons which have a negative charge), we determine that the net magnetic field \textbf{B}
-points upward, perpendicular to the radius of the coil, or upwards relative to Figure 2.
+points upward, perpendicular to the radius of the coil, or upwards relative to Figure 2. Additionally, we notice that
+as the Helmholtz current is increased a tighter loop is formed.
 
 Equation 1, which which was manipulated to produce our graph can be derived using the following equations:
 
@@ -447,21 +460,37 @@ the Helmholtz currents exactly at the far side of the pegs in the apparatus, lik
 This ambiguity would also skew our measured charge to mass ratio, since the charged masses are varied and not constant.
 
 \section{Conclusions}
-In Experiment 1, we first measure potential differences at various radii on a circular capacitor,
-and use Gauss's Law to calculate the inner and outer radii of the capacitor. We then check these predictions
-by physically measuring the inner and outer radii of the circular capacitor. Although our data seemed
-fine, our calculations did not agree within error of the measured values. Our inner radius was calculated to be
-$1.73 \pm 0.03 cm$, while our measured value was $1.9 \pm 0.1 cm$, and the outer radius of the circular capacitor
-was calculated as $9.3 \pm 0.1 cm$, while the measured value was $9.5 \pm 0.1 cm$. Since our resulting graph (Figure 4)
-was linear as expected. with no anomalous data points, the source of error was a constant factor, and therefore can
-likely be attributed to a faulty voltmeter. It should also be noted that when measuring the potential differences, pressing
-the probe on the capacitor with varying pressures and angles could change the measured potential difference.
-We did our best to keep these factors constant by taking multiple measurements.
+In Experiment 2, we calculate the charge to mass ratio $e/m$ of electrons fired in a Helmholtz coil. The apparatus
+was set up such that the magnetic field of the coil is aligned antiparallel to the earth's own magnetic field
+to simplify the geomery. The current was varied at three diferent voltages to align the electron loops to known radii, so that we could use the
+Helmholtz curents to calculate a value for $e/m$, and the earth's magnetic field $B_E$ by ploting a linear graph. We noticed that the
+radius of curvature of the electron loops increased as the Helmholtz current was lowered. Additionally, using the
+left hand rule (since electrons are negatively charged masses), we verified that the net magnetic field of the
+setup was directed upwards, in the same orientation of the coil (in other words, the direction of the net magnetic field
+was perpendicular to the radius of the coil). We calculated the charge to mass ratio of the electron to be ($\num{1.70e11} \pm \SI{4.91e9}{\coulomb\per\kilogram}$)
+and the earth's magnetic field to be
+($\num{4.00e-5} \pm \,\SI{6.40e-6}{\tesla}$). While these values are in the same order of magnitude as the
+expected values ( $\SI{1.76e11}{\coulomb\per\kilogram}$ for $e/m$
+and $4.8 \pm \,\SI{0.3e-5}{\tesla}$ for $B_E$), these values do not agree within error. The
+graph generated from our data was linear, however, so it is likely that the source of error introduced was a
+constant factor, whether it's miscalibration of equipment, or human error since we took care to record our
+results in a consistent manner.
 
-Next, we measured potential differences at various points on a parallel plate capacitor, and used the data to generate
-a graph which allows us to visualize the equipotential lines. The same data was also used to generate a 3 dimensional
-surface plot of the potential differences as a function of the horizontal and vertical position of the probe on the parallel plate
-capacitor. This allows us to visualize the electric potential on the capacitor.
+
+% and use Gauss's Law to calculate the inner and outer radii of the capacitor. We then check these predictions
+% by physically measuring the inner and outer radii of the circular capacitor. Although our data seemed
+% fine, our calculations did not agree within error of the measured values. Our inner radius was calculated to be
+% $1.73 \pm 0.03 cm$, while our measured value was $1.9 \pm 0.1 cm$, and the outer radius of the circular capacitor
+% was calculated as $9.3 \pm 0.1 cm$, while the measured value was $9.5 \pm 0.1 cm$. Since our resulting graph (Figure 4)
+% was linear as expected. with no anomalous data points, the source of error was a constant factor, and therefore can
+% likely be attributed to a faulty voltmeter. It should also be noted that when measuring the potential differences, pressing
+% the probe on the capacitor with varying pressures and angles could change the measured potential difference.
+% We did our best to keep these factors constant by taking multiple measurements.
+%
+% Next, we measured potential differences at various points on a parallel plate capacitor, and used the data to generate
+% a graph which allows us to visualize the equipotential lines. The same data was also used to generate a 3 dimensional
+% surface plot of the potential differences as a function of the horizontal and vertical position of the probe on the parallel plate
+% capacitor. This allows us to visualize the electric potential on the capacitor.
   % In lab 8, we set up a pendulum with a 2.3kg bob hanging off of a string, and put an arced track such that the bob would be close enough to the track at any point while it swings to make a spark, with a spark timer. We then used an electromagnet to release the bob from rest, and used the spark timer to keep track of the bob’s displacements, and since the spark timer sparks at regular intervals, we had enough data to generate plots in Excel of potential energy, kinetic energy, and total energy as functions of time. The law of conservation of energy says that energy cannot be created or destroyed, but it can be converted. Theoretically, all of the Pe at the beginning should convert completely into KE, and then towards the end, all of the KE that the bob has should convert back into PE. Indeed, we do observe this behaviour in the lab, albeit not perfectly, since energy is also lost due to some of it being converted to other forms such as friction. This caused TE to decrease over time. Additionally, there were some anomalous data points that can be attributed to the spark timer missing sparks. Overall, however, the data seemed reasonable, albeit the amount of energy lost per second using the graph’s data versus taking an average after 25 periods did seem to disagree with 3 orders of magnitude.  One can observe the physics principles explored in the lab in real-life such as on a rollercoaster, where the gravitational potential energy is also converted into kinetic energy and vice versa such as when the car is going through a loop.
 \bibliography{references}
 \end{document}
