@@ -393,17 +393,17 @@ Using the left-hand-rule for moving charge (since we are
 dealing with electrons which have a negative charge), we determine that the net magnetic field \textbf{B}
 points upward, perpendicular to the radius of the coil, or upwards relative to Figure 2.
 
-Equation 1, which which was manupilated to produce our graph can be derived using the following equations:
+Equation 1, which which was manipulated to produce our graph can be derived using the following equations:
 
 \noindent When a stream of electrons are accelerated through a potential difference $V$, the maximum
 kinetic energy is given by:
 $$\frac{1}{2}mv^2 = eV$$
 Next, the Lorentz force \textbf{F} is given by:
 $\textbf{F}=q\textbf{v}\times \textbf{B}$
-and since our magnetic field is set up so that \textbf{B} is perpendicular to the motion of the electrons (see Figure 1),
+(where $q$ is the charge of the moving particle), and since our magnetic field is set up so that \textbf{B} is perpendicular to the motion of the electrons (see Figure 1),
 the magnitude of the force $F$ is given by $$F=qvB$$
 Next, the radius of the circle, which is the path of the electrons in this experiment is such that
-the centripetal acceleration is furnished by the Lorentz force. Therefore, we obtain $$\frac{mv^2}{r}$$.
+the centripetal acceleration is furnished by the Lorentz force. Therefore, we obtain $$\frac{mv^2}{r}=evB$$.
 
 \noindent To obtain Equation 1, we first rearrange the first of the three equations above and substitute it into the third.
 $$\frac{1}{2}mv^2 = eV \Rightarrow v=\frac{\sqrt{2eV}}{m}$$
@@ -430,10 +430,21 @@ $$\frac{e}{m} = \frac{2V}{(B_H-B_E)^2r^2}$$
 \textit{Why is it important to align the Helmholtz coil, so that its field is
         anti-parallel to the earth's magnetic field?}\\
 \textbf{A:}
-Earth's magnetic field is strong enough to deflect our little electron beam\\ \\
+Earth's magnetic field is strong enough to deflect our little electron beam, which means its effects are non-negligible.
+However, if we align our Helmholtz coil such that it is exactly anti-parallel to the Earth's magnetic field, we notice that
+in this arrangement, since $B_E$ is pointing in the opposite direction to $B_H$, the magnitude of the net magnetic
+field can be found simply by subtracting $B_E$ from $B_H$ since
+it is anti-parallel to the earth's magnetic field. If the alignment was different, the geometry would not be so simple, and
+the path of the electrons would not be in the same plane as the orientation of the Helmholtz coil.\\ \\
 \textit{Explain what would happen if the beam in this experiment contained several ions of different masses.}\\
 \textbf{A:}
-biggermass means larger radius of curvature
+If there were several ions of different masses, the ions with larger mass would
+have a larger radius of curvature, and the ions with smaller mass would have a smaller radius of curvature, by observing that
+the centripital force depends on the  $F_c=\frac{mv^2}{r}$ relation. By rearranging this, we see that
+the mass is directly proportional to the radius of curvature, i.e. $m\propto r$.
+Experimentally, we would notice that the glowing path of the ions would be wider, and therefore it would be difficult to measure
+the Helmholtz currents exactly at the far side of the pegs in the apparatus, like we did for the electrons, which had unvarying masses.
+This ambiguity would also skew our measured charge to mass ratio, since the charged masses are varied and not constant.
 
 \section{Conclusions}
 In Experiment 1, we first measure potential differences at various radii on a circular capacitor,
