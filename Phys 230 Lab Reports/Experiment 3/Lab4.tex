@@ -70,7 +70,8 @@ current in the wire, and the resulting direction in which the thumb points is th
 $\textbf{B}$ field. By taking measurements of the earth's magnetic field $B_E$, and some physical measurements
 of the coils, such as the solenoid length $L$, its radius $R$, and number of turns $N$, we gain insight
 on how the magnetic field inside a solenoid with current running through it behaves.
-
+For a point along the cenral axis of a solenoid, the magnetic field is directed
+parallel to the axis with magnitude given by:
 \begin{equation}
   B=\frac{1}{2}\mu_0nI(\cos{\beta_2}-\cos{\beta_1})
 \end{equation}
@@ -349,7 +350,7 @@ solenoid, the magnetic field is illustrated in Figure 5 below:
 
 From Figure 4, we can see that the experimental values measured are quite different
 compared to the theoretical values. However, the shape of both curves are very similar.
-In fact, if the experimental values were offset by a scaling factor $\frac{B_t}{B_{exp}=1.33}$ , our
+In fact, if the experimental values were offset by a scaling factor $\frac{B_t}{B_{exp}}=1.33$ , our
 measured results would be extremely close to the expected theoretical curve. Therefore,
 the cause of error is constant, which implies that the Hall probe is likely miscalibrated,
 or it could be a result of our equations not taking into account the internal resistance of the wires.
@@ -359,7 +360,9 @@ or it could be a result of our equations not taking into account the internal re
 \subsection{Part 2}
 
 
-The graph produced (Figure 5) is linear as expected, and looks fucking amazing.
+The graph produced (Figure 5) is linear as expected, with no anomalous data points.
+Using the scaling factor 1.33 derived in part 1 of the experiment, we obtain the value $N=132 \pm 1$,
+from the slope of the graph in Figure 5, which agrees within error of the theoretical value 133.
 
 % \begin{figure}[H]
 %   \centering
@@ -391,9 +394,6 @@ we notice that $x-x_c=R/2$, which we can substitute into Equation 2 to obtain:
 $$ B_c= \frac{\frac{1}{2}\mu_0NR^2I}{(R^2+(\frac{R}{2})^2)^{3/2}} = \frac{\frac{1}{2}\mu_0NR^2I}{\frac{\sqrt{125}}{8}R^3} = \frac{1}{2}\times \frac{8\mu_0NI}{\sqrt{125}R} $$
 and by realizing that $2B_c=B_H$, we finally obtain Equation 3 by multiplying the above expression by 2:
 $$B_H=\frac{8\mu_0NI}{\sqrt{125}R}$$
-
-Using the scaling factor 1.33 derived in part 1 of the experiment, we obtain the value $N=132 \pm 1$,
-which agrees within error of the theoretical value 133.
 \section{Conclusions}
 
 In Experiment 2, we measure the distribution of the magnetic field across a solenoid,
@@ -408,7 +408,7 @@ was likely miscalibrated, or some factor was not being taken into account such a
 of the wires. In part 2, the Hall probe was used to measure the magnetic field
 at the center of the Helmholtz coils with varying current, from which we could experimentally
 determine the number of turns of the wire in the coils by plotting a graph, and using the scaling factor obtained in Part 1
-to correctly determine the number of turns in the Helmholtz coil. The measured value was $132 \pm 1$ turns, which agrees
+to correctly determine the number of turns in the Helmholtz coil by multiplying the slope of our graph by 1.33. The measured value was $132 \pm 1$ turns, which agrees
 within error of the expected value of 133 turns.
 % In Experiment 3, we calculate the charge to mass ratio $e/m$ of electrons fired in a Helmholtz coil, which are accelerated by an electric field, and
 % deflected by a magnetic field to form a circular orbit. The apparatus
