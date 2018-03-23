@@ -294,9 +294,9 @@ Now, our slope corresponds to N, however to determine our experimental
 value for N, we use the scaling factor $\frac{B_t}{B_{exp}}=1.33$ which was
 determined in Part 1 of the experiment.
 
-$$ N= 99.4 \times 1.33 \approx 132 turns $$
+$$ N= 99.4 \times 1.33 \approx 132 \:turns $$
 $$ \delta N   = 0.4 \times 1.33 \approx 1 $$
-$$ \therefore N = 132 \pm 1 turns$$
+$$ \therefore N = 132 \pm 1 \:turns$$
 The theoretical $N=133$
 % Now do your error calculations and theoretical value shit here.
 % \noindent To obtain the calculated value for $e/m$, we can see from our LINEST data (Table 2) that the slope, $\sqrt{m/e}$ is
@@ -373,18 +373,24 @@ Using equation 1, and the geometry from Figure 1, we can find a simplified expre
 $$ \cos{\beta_2} = \frac{L/2}{\sqrt{R^2+L^2/4}}$$
 $$ \cos{\beta_1} = \sin{(\pi/2 - \beta_1)} = -\sin{(\beta_1-\pi/2)} = -\frac{L/2}{\sqrt{R^2+L^2/4}}  $$
 Substituting into equation 1 yields:
-$$ B_s = 1/2 \mu_0nI \left(\frac{L/2}{\sqrt{R^2+L^2/4}} + \frac{L/2}{\sqrt{R^2+L^2/4}} \right) =  1/2\mu_0nI \left(\frac{L}{\sqrt{R^2+L^2/4}} \right)= \frac{\mu_0nIL}{\sqrt{4R^2+L^2}}$$
+$$ B_s = 1/2 \mu_0nI \left(\frac{L/2}{\sqrt{R^2+\frac{L^2}{4}}} + \frac{L/2}{\sqrt{R^2+\frac{L^2}{4}}} \right) =  1/2\mu_0nI \left(\frac{L}{\sqrt{R^2+\frac{L^2}{4}}} \right)= \frac{\mu_0nIL}{\sqrt{4R^2+L^2}}$$
 Since $n=N/L$, we can substitute $nL=N$ to finally obtain:
 $$ B_s= \frac{\mu_0NI}{\sqrt{4R^2+L^2}} $$
 %and compare it to the
 %expected value of 133. The radius of each coil is $14.8\pm 0.2cm$
 
-We can also find the simplified expression for $B_s$ in the centre of a real solenoid as follows:
-$$1$$
-Next, the expression for $B_c$ in the center of a single coil can be found:
-$$2$$
-Additionally, the expression for $B_H$ can be obtained from the expression for $B_c$ derived above:
-$$3$$
+We can also find an expression for $B_c$ in the centre of a single coil using Equation 2 as follows:\\
+At the centre of the coil, $x=x_c$ to obtain:
+$$ B_c = \frac{\frac{1}{2} \mu_0NR^2I}{(R^2+(x_c-x_c)^2)^{3/2}} $$
+which simplifies nicely:
+$$ \frac{\frac{1}{2} \mu_0NR^2I}{(R^2)^{3/2}} = \frac{\frac{1}{2} \mu_0NR^2I}{R^3}  $$
+$$ \therefore B_c = \frac{\frac{1}{2} \mu_0NI}{2R} $$
+
+Additionally, the expression for $B_H$ can be obtained from the expression for $B_c$ derived above. By inspection,
+we notice that $x-x_c=R/2$, which we can substitute into Equation 2 to obtain:
+$$ B_c= \frac{\frac{1}{2}\mu_0NR^2I}{(R^2+(\frac{R}{2})^2)^{3/2}} = \frac{\frac{1}{2}\mu_0NR^2I}{\frac{\sqrt{125}}{8}R^3} = \frac{1}{2}\times \frac{8\mu_0NI}{\sqrt{125}R} $$
+and by realizing that $2B_c=B_H$, we finally obtain Equation 3 by multiplying the above expression by 2:
+$$B_H=\frac{8\mu_0NI}{\sqrt{125}R}$$
 
 Using the scaling factor 1.33 derived in part 1 of the experiment, we obtain the value $N=132 \pm 1$,
 which agrees within error of the theoretical value 133.
@@ -392,17 +398,18 @@ which agrees within error of the theoretical value 133.
 
 In Experiment 2, we measure the distribution of the magnetic field across a solenoid,
 and we also measure the magnetic field of a Helmholtz coil from which we experimentally determine the
-number of turns of the wire in the coil. In the first part, q Hall probe was used to measure the magnetic field
+number of turns of the wire in the coil. In the first part, a Hall probe was used to measure the magnetic field
 at various points inside a solenoid. The graph produced from our experimental values
 closely matched the shape of the theoretical curve, even though the measured values were
-quite different from the theoretical values. It should be noted that if each recorded
-data point was offset by some correction amount, the measured values would fit the
+quite different from the theoretical values. If each recorded
+data point was scaled by 1.33, the measured values would fit the
 theoretical curve very nicely, which implies that the Hall probe
 was likely miscalibrated, or some factor was not being taken into account such as the internal resistance
 of the wires. In part 2, the Hall probe was used to measure the magnetic field
 at the center of the Helmholtz coils with varying current, from which we could experimentally
-determine the number of turns of the wire in the coils. The measured values were XXXXXXXXXXXXXXXXXXXXXXx
-and compared to the theoretical XXXXXXXXXXXXXx it did / did not agree within error.
+determine the number of turns of the wire in the coils by plotting a graph, and using the scaling factor obtained in Part 1
+to correctly determine the number of turns in the Helmholtz coil. The measured value was $132 \pm 1$ turns, which agrees
+within error of the expected value of 133 turns.
 % In Experiment 3, we calculate the charge to mass ratio $e/m$ of electrons fired in a Helmholtz coil, which are accelerated by an electric field, and
 % deflected by a magnetic field to form a circular orbit. The apparatus
 % was set up such that the magnetic field of the coil is aligned antiparallel to the earth's own magnetic field
