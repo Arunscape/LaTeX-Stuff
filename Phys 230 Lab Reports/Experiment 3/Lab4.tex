@@ -94,7 +94,7 @@ and the magnetic field along the axis halfway between the fields is given by:
 where $B_H$ is the magnitude of the Helmholtz magnetic field.
 From the above equations, we also obtain
 expressions for $B_c$, the magnetic field in the center of a single coil, and
-a simplified expression for $B_s$, the magnetic field in the center of a real solenoid.
+a simplified expression for $B_s$, in the center of a real solenoid.
 
 \section{Experimental Method}
 % List all equipment used\\
@@ -135,12 +135,14 @@ The solenoid is wired as shown in Figure 1. Before the circuit is wired up,
 $B_E$ is measured using the Hall apparatus. Next, the operating current in the solenoid
 was set by setting the current of the power supply to $1.00 A$ with the switch closed.
 If a negative value was read for the magnetic field when the switch was
-closed and the power supply was on, the polartity was reversed by switching the
-positive and negative leads connected to the power supply. Finally, the Hall apparatus
+closed and the power supply was on, the current in the solenoid was reversed by switching the
+positive and negative leads connected to the power supply. The Hall apparatus
 was set up such that the tip of the rod would be just outside of the solenoid,
 and centered. From this point, the $B$ field measured in microTeslas was measured
 in two centimetre increments as the Hall apparatus was moved inside the coil, until the
-tip of the rod just barely reached the end of the coil.
+tip of the rod just barely reached the end of the coil using LoggerPro software.
+Finally, the solenoid length $L$, radius $R$, number of turns $N$, operating current $I$
+and ruler position $x_c$ were recorded, and the data was plotted using Excel.
 
 \subsection{Part 2}
 
@@ -149,49 +151,68 @@ tip of the rod just barely reached the end of the coil.
     \includegraphics[width=.6\textwidth]{p2-3.jpg}
     \caption{Measuring the magnetic field of the Helmholtz coil.}
 \end{figure}
-The apparatus involves three separate electrical circuits.
-The filament, anode circuit, and the Helmholtz circuit are connected as outlined
-below in Figure 2. We first begin by setting the DC voltage source to 20 V, then modifying the
-AC voltage source to change the radius of the glowing circular electron path. The current going through the
-Helmholtz coil is recorded in a spreadsheet at each point where the loop is on the far side of each peg, with larger
-currents resulting in smaller loops. Then,
-the DC voltage source is set to 30 V, and the Helmholtz current $I$ is measured and recorded at the 5 points again.
-The same process is repeated once more when the DC voltage source is set to 40 V. It should be noted
-that adjusting the brightness control knob, viewing the loop from above, and doing the experiment in a dark
-environment made it easier to view the electron loop.
-Since we have the Helmholtz currents, and the diameter of the pegs in the apparatus are known (and therefore
-the radius of the loops that the electrons make), a linear graph can be created by linearizing equation 1,
-from which we can obtain the charge to mass ratio $e/m$ from the slope, and the earth's magnetic field $B_E$
-from the Y-intercept.
+The Helmholtz coils are wired as shown in Figure 2. The tip of the Hall probe
+was positioned to be in the exact center of the two coils. Starting at a current
+of $0.10 A$, we measured $B_H$ as the current was incremented by $0.1 A$ until
+we reached a final current of $1A$. The data was recorded using LoggerPro, and
+a graph was generated in Excel.
+
 
 \section{Results}
 
-Raw data recorded while measuring the Helmholtz current \textit{I} required
-to align the beam with the far side of each peg.
+\subsection{Part 1}
+
+The constants measured and values calculated used to generate Table 2 are
+as follows:
 
 \begin{table}[H]
 \centering
+\begin{tabular}{ll}
+Experimental Constants: & Calculated Constants:     \\ \hline
+                        &                           \\
+$L =0.280m$             & $\mu_0 =\SI{1.257E-06}{\tesla \metre \per \ampere}$   \\
+$R =0.0269m$            & $\mu_0 N I/2/L = \SI{1.70E-03}{\tesla}$ \\
+$N = 758$               & $R^2 =0.000724m^2$        \\
+$I =1A$                 & $x_c - L/2 =0.111m$       \\
+$x_c = 0.251m$          & $x_c + L/2 = 0.391m$      \\
+$B_e = -0.257mT$        &                           \\
+\end{tabular}
+\caption{Experimental and calculated constants}
+\end{table}
+
+Table 2 contains the measured values of the magnetic field at verious
+positions in the solenoid, as well as calculated theoretical values.
+
+\begin{table}[]
+\centering
 \begin{tabular}{|l|l|l|l|}
 \hline
-Voltage (V) & Current (A) & Peg number & Radius r (cm) \\ \hline
-20          & 2.68        & 1          & 0.0325        \\ \hline
-20          & 2.19        & 2          & 0.039         \\ \hline
-20          & 1.94        & 3          & 0.045         \\ \hline
-20          & 1.73        & 4          & 0.0515        \\ \hline
-20          & 1.54        & 5          & 0.0575        \\ \hline
-30          & 3.12        & 1          & 0.0325        \\ \hline
-30          & 2.66        & 2          & 0.039         \\ \hline
-30          & 2.29        & 3          & 0.045         \\ \hline
-30          & 2.1         & 4          & 0.0515        \\ \hline
-30          & 1.9         & 5          & 0.0575        \\ \hline
-40          & 3.62        & 1          & 0.0325        \\ \hline
-40          & 3.05        & 2          & 0.039         \\ \hline
-40          & 2.63        & 3          & 0.045         \\ \hline
-40          & 2.35        & 4          & 0.0515        \\ \hline
-40          & 2.12        & 5          & 0.0575        \\ \hline
+Measured B (mT) & x (m) & Corrected  $(B - B_E),\pm 2\%$ (T) & Theory $B_t$ \\ \hline
+0.50            & 0.099 & 7.57E-04                           & 1.03E-03     \\ \hline
+1.40            & 0.119 & 1.65E-03                           & 2.21E-03     \\ \hline
+1.99            & 0.139 & 2.25E-03                           & 2.93E-03     \\ \hline
+2.19            & 0.159 & 2.45E-03                           & 3.18E-03     \\ \hline
+2.26            & 0.179 & 2.52E-03                           & 3.27E-03     \\ \hline
+2.27            & 0.199 & 2.53E-03                           & 3.31E-03     \\ \hline
+2.25            & 0.219 & 2.51E-03                           & 3.33E-03     \\ \hline
+2.25            & 0.239 & 2.50E-03                           & 3.34E-03     \\ \hline
+2.25            & 0.259 & 2.51E-03                           & 3.34E-03     \\ \hline
+2.26            & 0.279 & 2.52E-03                           & 3.33E-03     \\ \hline
+2.25            & 0.299 & 2.51E-03                           & 3.32E-03     \\ \hline
+2.23            & 0.319 & 2.48E-03                           & 3.28E-03     \\ \hline
+2.18            & 0.339 & 2.44E-03                           & 3.20E-03     \\ \hline
+2.02            & 0.359 & 2.28E-03                           & 2.98E-03     \\ \hline
+1.56            & 0.379 & 1.82E-03                           & 2.36E-03     \\ \hline
+0.65            & 0.399 & 9.11E-04                           & 1.18E-03     \\ \hline
 \end{tabular}
-\caption{Raw data recorded when measuring the Helmholtz current}
+\caption{Raw data recorded while measuring $B_s$ as the Hall probe was moved in 2cm increments.}
 \end{table}
+
+\subsection{Part 2}
+
+
+
+
 
 
 Using the data in Table 1, a linear graph is generated with Equation 1,
