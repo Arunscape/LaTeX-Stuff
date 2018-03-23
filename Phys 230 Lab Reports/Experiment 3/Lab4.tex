@@ -185,7 +185,7 @@ positions in the solenoid, as well as calculated theoretical values.
 
 \begin{table}[]
 \centering
-\begin{tabular}{|l|l|l|l|}
+\begin{tabular}{|c|c|c|c|}
 \hline
 Measured B (mT) & x (m) & Corrected  $(B - B_E),\pm 2\%$ (T) & Theory $B_t$ \\ \hline
 0.50            & 0.099 & 7.57E-04                           & 1.03E-03     \\ \hline
@@ -205,19 +205,23 @@ Measured B (mT) & x (m) & Corrected  $(B - B_E),\pm 2\%$ (T) & Theory $B_t$ \\ \
 1.56            & 0.379 & 1.82E-03                           & 2.36E-03     \\ \hline
 0.65            & 0.399 & 9.11E-04                           & 1.18E-03     \\ \hline
 \end{tabular}
-\caption{Raw data recorded while measuring $B_s$ as the Hall probe was moved in 2cm increments.}
+\caption{Raw data recorded while measuring $B_s$ as the Hall probe was moved in 2 centimetre increments.}
 \end{table}
+
+Using the data in Table 2, a graph is generated, such that we can compare our
+experimental data to a theoretical curve.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{part1graph.jpg}
+    \caption{Experimental values of B field in solenoid compared to theoretical values}
+\end{figure}
+
 
 \subsection{Part 2}
 
 
 
-
-
-
-Using the data in Table 1, a linear graph is generated with Equation 1,
-which is obtained through a derivation outlined in the discussion section.
-\\The equation is linearized by the following process:
 $$ B_H = \frac{8\mu_0NI}{\sqrt{125}R} $$
 % $$ \Therefore B_H= \frac{8 (\SI{4\pi e-7}{\tesla\metre\per\ampere})}{\sqrt{125}(\SI{14.8}{\cm})} $$
 $$ \Rightarrow N = \frac{B_H \sqrt{125} R}{8\mu_0I} $$
@@ -225,6 +229,9 @@ $$ \therefore N= \frac{}{} $$
  so we generate a graph
 with $\frac{\sqrt{2V}}{r}$ on the X axis using our measured voltage values, and $B_H$ on the Y axis
 using our measured current values.
+
+
+
 
 % \begin{figure}[H]
 %   \centering
