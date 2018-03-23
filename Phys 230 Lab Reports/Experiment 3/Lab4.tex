@@ -176,11 +176,11 @@ as follows:
 \begin{tabular}{ll}
 Experimental Constants: & Calculated Constants:     \\ \hline
                         &                           \\
-$L =0.280m$             & $\mu_0 =\SI{1.257E-06}{\tesla \metre \per \ampere}$   \\
-$R =0.0269m$            & $\mu_0 N I/2/L = \SI{1.70E-03}{\tesla}$ \\
+$L =0.280 \pm 0.001m$             & $\mu_0 =\SI{4 \pi e-7}{\tesla \metre \per \ampere}$   \\
+$R =0.0269 \pm 0.003m$            & $\mu_0 N I/2/L = \SI{1.70E-03}{\tesla}$ \\
 $N = 758$               & $R^2 =0.000724m^2$        \\
 $I =1A$                 & $x_c - L/2 =0.111m$       \\
-$x_c = 0.251m$          & $x_c + L/2 = 0.391m$      \\
+$x_c = 0.2505m$          & $x_c + L/2 = 0.391m$      \\
 $B_e = -0.257mT$        &                           \\
 \end{tabular}
 \caption{Experimental and calculated constants}
@@ -214,9 +214,19 @@ Measured B (mT) & x (m) & Corrected  $(B - B_E),\pm 2\%$ (T) & Theory $B_t$ \\ \
 \caption{Raw data recorded while measuring $B_s$ as the Hall probe was moved in 2 centimetre increments.}
 \end{table}
 
-Using the data in Table 2, a graph is generated, such that we can compare our
-experimental data to a theoretical curve.
+Using the data in Table 2, a graph is generated (Figure 4), such that we can compare our
+experimental data to a theoretical curve. A sample calculation for the corrected $B-B_E$
+is as follows:
+$$ B-B_E = 0.5 mT - (-0.257 mT) = 0.757 mT = \SI{7.57e-4}{\tesla}$$
+The theoretical $B_t$ was calculated using the Excel template downloaded from eclass.
 
+By inspection of Figure 4 and Table 2, the ratio $\frac{B_t}{B_{exp}}$ can
+be calculated, which is used to scale the slope found in Part 2 of the experiment,
+which in turn is used to determine the experimental value of $N$, the number of turns in the coil.
+$\frac{B_t}{B_{exp}}$ is found by picking two data points in the centre of the plateau:
+$${Theoretical: } (0.259, \num{3.43e-3})$$
+$${Experimental: } (0.259, \num{2.51e-3})$$
+$$\therefore \frac{B_t}{B_{exp}}= \frac{\num{3.43e-3}}{\num{2.51e-3}}=1.33$$
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{part1graph.jpg}
@@ -226,17 +236,42 @@ experimental data to a theoretical curve.
 
 \subsection{Part 2}
 
-We linearize some fucking equation to make that graph, and
-the whole fucking derivation for that should be outlined here.
+The raw data recorded for part 2 where we beasure $B_H$ in the
+Helmholtz coils as a function of current is outlined in Table 2.
 
-$$ B_H = \frac{8\mu_0NI}{\sqrt{125}R} $$
-$$ \therefore B_H = \frac{8 \times \SI{4 \pi e-7}{\tesla\metre\per\ampere}}{\sqrt{125}(\SI{14.8}{\cm})}$$
-$$ \Rightarrow N = \frac{B_H \sqrt{125} R}{8\mu_0I} $$
-$$ \therefore N= \frac{}{} $$
- so we generate a graph
-with $\frac{\sqrt{2V}}{r}$ on the X axis using our measured voltage values, and $B_H$ on the Y axis
-using our measured current values.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Current (A) & $B_H (T)$          \\ \hline
+0.1                               & -0.000194861519119 \\ \hline
+0.2                               & -0.000133962572081 \\ \hline
+0.3                               & -6.99808991888E-05 \\ \hline
+0.4                               & -1.21344552038E-05 \\ \hline
+0.5                               & 4.36568382113E-05  \\ \hline
+0.6                               & 0.000108031407536  \\ \hline
+0.7                               & 0.000168628126549  \\ \hline
+0.8                               & 0.000230010638426  \\ \hline
+0.9                               & 0.000286799284324  \\ \hline
+1                                 & 0.000351052962439  \\ \hline
+\end{tabular}
+\caption{Measured magnitudes of $B_H$ when varying the current in the coil in 0.1A increments}
+\end{table}
 
+Given that $R=14.8 \pm 0.2 cm$, we can linearize Equation 3 to
+generate a graph (Figure 5), from which we can determine the experimental
+value for N  as follows:
+
+$$ B_H = \frac{8\mu_0NI}{\sqrt{125}R} \Rightarrow B_H = N\left( \frac{8\mu_0I}{\sqrt{125}R} \right)  $$
+% $$ \therefore B_H = \frac{8 \times \SI{4 \pi e-7}{\tesla\metre\per\ampere}}{\sqrt{125}(\SI{14.8}{\cm})}$$
+% $$ \Rightarrow N = \frac{B_H \sqrt{125} R}{8\mu_0I} $$
+% $$ \therefore N= \frac{}{} $$
+%  so we generate a graph
+% with $\frac{\sqrt{2V}}{r}$ on the X axis using our measured voltage values, and $B_H$ on the Y axis
+% using our measured current values.
+Using the form above, we can plot a graph, such that
+$B_H$ is on the y-axis, and $\frac{8\mu_0NI}{\sqrt{125}R}$ is plotted on the x-axis.
+Then, our experimental value for N will be the slope, and the y-intercept should theoretically be zero.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{p2graph.jpg}
@@ -244,14 +279,14 @@ using our measured current values.
 \end{figure}
 
 \newpage
-\noindent Using Excel's LINEST function, we obtain the following data from the graph in Figure 3.
+\noindent Using Excel's LINEST function, we obtain the following data from the graph in Figure 5.
 \begin{table}[H]
 \centering
 \begin{tabular}{cc}
-  Slope $\sqrt{m/e}$ : &  $\num{2.4267255938411E-06}\pm \num{3.50649774570897E-08}$ \\
-  Y-Intercept $B_E$   :&  $\num{3.99642631798173E-05}\pm \num{6.40167504007098E-06}$ \\
+  Slope N &  $ =99.4073706 \pm 0.3873961 $ \\
+  % Y-Intercept: &  $\num{3.99642631798173E-05}\pm \num{6.40167504007098E-06}$ \\
 \end{tabular}
-\caption{LINEST data from the graph in Figure 3}
+% \caption{LINEST data from the graph in Figure 3}
 \end{table}
 
 Now do your error calculations and theoretical value shit here.
@@ -307,7 +342,8 @@ From Figure 4, we can see that the experimental values measured are quite differ
 compared to the theoretical values. However, the shape of both curves are very similar.
 In fact, if the experimental values were offset by some constant correction amount, our
 measured results would be extremely close to the expected theoretical curve. Therefore,
-the cause of error is constant, which implies that the Hall probe is likely miscalibrated.
+the cause of error is constant, which implies that the Hall probe is likely miscalibrated,
+or it could be a result of our equations not taking into account the internal resistance of the wires.
 
 
 
@@ -346,7 +382,8 @@ closely matched the shape of the theoretical curve, even though the measured val
 quite different from the theoretical values. It should be noted that if each recorded
 data point was offset by some correction amount, the measured values would fit the
 theoretical curve very nicely, which implies that the Hall probe
-was likely miscalibrated. In part 2, the Hall probe was used to measure the magnetic field
+was likely miscalibrated, or some factor was not being taken into account such as the internal resistance
+of the wires. In part 2, the Hall probe was used to measure the magnetic field
 at the center of the Helmholtz coils with varying current, from which we could experimentally
 determine the number of turns of the wire in the coils. The measured values were XXXXXXXXXXXXXXXXXXXXXXx
 and compared to the theoretical XXXXXXXXXXXXXx it did / did not agree within error.

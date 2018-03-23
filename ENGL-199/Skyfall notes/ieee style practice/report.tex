@@ -1,0 +1,47 @@
+%preamble
+% \documentclass{article}
+\documentclass{IEEEtran}
+
+%sets length of spacing between paragraphs
+\setlength{\parskip}{1em}
+% \usepackage{url}
+\usepackage{hyperref}
+
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+%gets rid of section numberi
+% \makeatletter
+% \renewcommand{\@seccntformat}[1]{}
+% \makeatother
+
+  \synctex=1
+
+%temporary
+\usepackage{blindtext}
+
+%\usepackage[style=ieee]{biblatex}
+
+%IEEE style bibliography
+\bibliographystyle{IEEEtran}
+
+%title page
+\title{Woooooooaaaaah\\
+\vspace{.25cm}\large ENGL 199 Report \vspace{-.5cm}}
+\author{\LARGE Arun Woosaree}
+\date{\today}
+%actual document
+\begin{document}
+  \maketitle %insert titlepage here
+
+  \section{Summary of James Smith's article }
+  In James Smith's article, `` `How Safe Do You Feel?' James Bond,
+  Skyfall, and the Politics of the Secret Agent,'' he argues for the
+  importance of advanced technology in this film.
+
+  James Smith mentions that \textit{Skyfall} ``Updates Bond for the `Anonymous generation of hacktivists' ''
+  \cite{jamessmith}. He also mentions some other things, such as comparing
+  Silvia to Wikileaks founder Julian Assange.
+% \bibliography{references}
+\bibliography{IEEEabrv,referenes}
+\end{document}
