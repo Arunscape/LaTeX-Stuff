@@ -76,7 +76,13 @@ on how the magnetic field inside a solenoid with current running through it beha
 \end{equation}
 where $\mu_0=\SI{4\pi e-7}{\henry\per\metre}$ is the magnetic permeability of free space,
 $n=N/L$ is the number of turns per unit length of the solenoid, $I$ is the current in the coil, and the cosine
-arguments are shown in Figure 1. \textbf{NOT FIGURE 1 FIX THIS BUT IDK WHAT FIGURE IT IS YET BECAUSE I DIDN'T WRITE THAT PART OF THE LAB REPORT YET}
+arguments are shown in Figure 1 below
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{equation.jpg}
+    \caption{Solenoid geometry \cite{labmanual}}
+\end{figure}
 
 We also measure the magnetic field of a Helmholtz coil, from which we experimentally determine the
 number of turns of the wire in the coil using the following equations and by plotting a graph.
@@ -131,7 +137,7 @@ a simplified expression for $B_s$, in the center of a real solenoid.
     \caption{Measuring the magnetic field of a solenoid.}
 \end{figure}
 
-The solenoid is wired as shown in Figure 1. Before the circuit is wired up,
+The solenoid is wired as shown in Figure 2. Before the circuit is wired up,
 $B_E$ is measured using the Hall apparatus. Next, the operating current in the solenoid
 was set by setting the current of the power supply to $1.00 A$ with the switch closed.
 If a negative value was read for the magnetic field when the switch was
@@ -151,7 +157,7 @@ and ruler position $x_c$ were recorded, and the data was plotted using Excel.
     \includegraphics[width=.6\textwidth]{p2-3.jpg}
     \caption{Measuring the magnetic field of the Helmholtz coil.}
 \end{figure}
-The Helmholtz coils are wired as shown in Figure 2. The tip of the Hall probe
+The Helmholtz coils are wired as shown in Figure 3. The tip of the Hall probe
 was positioned to be in the exact center of the two coils. Starting at a current
 of $0.10 A$, we measured $B_H$ as the current was incremented by $0.1 A$ until
 we reached a final current of $1A$. The data was recorded using LoggerPro, and
@@ -220,24 +226,22 @@ experimental data to a theoretical curve.
 
 \subsection{Part 2}
 
-
+We linearize some fucking equation to make that graph, and
+the whole fucking derivation for that should be outlined here.
 
 $$ B_H = \frac{8\mu_0NI}{\sqrt{125}R} $$
-% $$ \Therefore B_H= \frac{8 (\SI{4\pi e-7}{\tesla\metre\per\ampere})}{\sqrt{125}(\SI{14.8}{\cm})} $$
+$$ \therefore B_H = \frac{8 \times \SI{4 \pi e-7}{\tesla\metre\per\ampere}}{\sqrt{125}(\SI{14.8}{\cm})}$$
 $$ \Rightarrow N = \frac{B_H \sqrt{125} R}{8\mu_0I} $$
 $$ \therefore N= \frac{}{} $$
  so we generate a graph
 with $\frac{\sqrt{2V}}{r}$ on the X axis using our measured voltage values, and $B_H$ on the Y axis
 using our measured current values.
 
-
-
-
-% \begin{figure}[H]
-%   \centering
-%   \includegraphics[width=\textwidth]{chart1.png}
-%   \caption{Measuring the voltage difference in a region between two parallel conductors.}
-% \end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{p2graph.jpg}
+  \caption{$B_H$ as a function of current}
+\end{figure}
 
 \newpage
 \noindent Using Excel's LINEST function, we obtain the following data from the graph in Figure 3.
@@ -250,6 +254,7 @@ using our measured current values.
 \caption{LINEST data from the graph in Figure 3}
 \end{table}
 
+Now do your error calculations and theoretical value shit here.
 \noindent To obtain the calculated value for $e/m$, we can see from our LINEST data (Table 2) that the slope, $\sqrt{m/e}$ is
 $\num{2.4267255938411E-06}$.\\
 Thus, the calculated value of $e/m$ can be found:
@@ -288,25 +293,28 @@ $B_E$: & $4.8 \pm \,\SI{0.3e-5}{\tesla}$           & $\num{4.00e-5} \pm \,\SI{6.
 
 \subsection{Part 1}
 
+The right hand rule is used to determine the
+direction of the magnetic $\textbf{B}$ field in the coils of wire. In the case of the
+solenoid, the magnetic field is illustrated in Figure 5 below:
 
-From Table 3, we can see that our calculated values for $e/m$
-($\num{1.70e11} \pm \SI{4.91e9}{\coulomb\per\kilogram}$)
-and $B_E$
-($\num{4.00e-5} \pm \,\SI{6.40e-6}{\tesla}$) were in the same order of magnitude as the
-expected values. ( $\SI{1.76e11}{\coulomb\per\kilogram}$ for $e/m$
-and $4.8 \pm \,\SI{0.3e-5}{\tesla}$ for $B_E$.)
-Additionally, the percent error for the charge to mass ration seemed relatively good, being 3.52\%.
-However, our calculated value of $B_E$ was a fair bit off, with a 16.74\% error.
-Unfortunately, it is clear that our calculated values do are not within error of the
-expected values.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{question1.jpg}
+    \caption{Experimental values of B field in solenoid compared to theoretical values}
+\end{figure}
 
-At first glance, the graph (Figure 3) produced from our raw data (Table 1) seems reasonable, especially
-because all the data points recorded seem to fit nicely on the trendline with
-no anomalous data points compared to the other values. This means that whatever error
-introduced in our measurement of voltages was a constant factor, since we took care
-to measure the currents exactly when the electron loop was on the far side of each peg, as specified in the
-lab manual. There are many potential sources of error, including human error, and potential miscalibration of equipment since we are dealing
-with electrons which are tiny in nature. We did our best to keep these factors constant.
+From Figure 4, we can see that the experimental values measured are quite different
+compared to the theoretical values. However, the shape of both curves are very similar.
+In fact, if the experimental values were offset by some constant correction amount, our
+measured results would be extremely close to the expected theoretical curve. Therefore,
+the cause of error is constant, which implies that the Hall probe is likely miscalibrated.
+
+
+
+\subsection{Part 2}
+
+
+The graph produced (Figure 5) is linear as expected, and looks fucking amazing.
 
 % \begin{figure}[H]
 %   \centering
@@ -314,70 +322,50 @@ with electrons which are tiny in nature. We did our best to keep these factors c
 %   \caption{The direction of the \textbf{B} field is found to be pointing out of the page when drawn this way.}
 % \end{figure}
 
-Using the left-hand-rule for moving a charged particle, (since we are
-dealing with electrons which have a negative charge), we determine that the net magnetic field \textbf{B}
-points upward, perpendicular to the radius of the coil, or upwards relative to Figure 2. Additionally, we notice that
-as the Helmholtz current is increased a tighter loop is formed.
+ SOME MORE DERIVATIONS AS FOLLOWS:
 
-Equation 1, which which was manipulated to produce our graph can be derived using the following equations:
+Using equation 4, we can graphically determine the number of turns $N$
+$$0$$
+%and compare it to the
+%expected value of 133. The radius of each coil is $14.8\pm 0.2cm$
 
-\noindent When a stream of electrons are accelerated through a potential difference $V$, the maximum
-kinetic energy is given by:
-$$\frac{1}{2}mv^2 = eV$$
-Next, the Lorentz force \textbf{F} is given by:
-$\textbf{F}=q\textbf{v}\times \textbf{B}$
-(where $q$ is the charge of the moving particle), and since our magnetic field is set up so that \textbf{B} is perpendicular to the motion of the electrons (see Figure 1),
-the magnitude of the force $F$ is given by $$F=qvB$$
-Next, the radius of the circle, which is the path of the electrons in this experiment is such that
-the centripetal acceleration is furnished by the Lorentz force. Therefore, we obtain $$\frac{mv^2}{r}=evB$$
-
-\noindent To obtain Equation 1, we first rearrange the first of the three equations above and substitute it into the third.
-$$\frac{1}{2}mv^2 = eV \Rightarrow v=\frac{\sqrt{2eV}}{m}$$
-$$\Rightarrow \frac{m(\frac{2eV}{m})}{r}=e\sqrt{\frac{2eV}{m}}B$$
-$$\Rightarrow \frac{4V^2}{r^2}=\frac{2eV}{m}B^2$$
-$$\Rightarrow \frac{e}{m} = \frac{2V}{r^2B^2}$$
-Finally, we notice that since our apparatus is aimed antiparallel to earth's magnetic field, such that
-the magnitude of the total magnetic field $B=B_H-B_E$, and substitute this result in the above equation.
-Finally, we obtain equation 1.
-$$\frac{e}{m} = \frac{2V}{(B_H-B_E)^2r^2}$$
-
-\textbf{Questions: }\\ \\
-\textit{Why is it important to align the Helmholtz coil, so that its field is
-        anti-parallel to the earth's magnetic field?}\\
-\textbf{A:}
-Earth's magnetic field is strong enough to deflect our little electron beam, which means its effects are non-negligible.
-However, if we align our Helmholtz coil such that it is exactly anti-parallel to the Earth's magnetic field, we notice that
-in this arrangement, since $B_E$ is pointing in the opposite direction to $B_H$, the magnitude of the net magnetic
-field can be found simply by subtracting $B_E$ from $B_H$ since
-it is anti-parallel to the earth's magnetic field. If the alignment was different, the geometry would not be so simple, and
-the path of the electrons would not be in the same plane as the orientation of the Helmholtz coil.\\ \\
-\textit{Explain what would happen if the beam in this experiment contained several ions of different masses.}\\
-\textbf{A:}
-If there were several ions of different masses, the ions with larger mass would
-have a larger radius of curvature, and the ions with smaller mass would have a smaller radius of curvature, by observing that
-the centripital force depends on the  $F_c=\frac{mv^2}{r}$ relation. By rearranging this, we see that
-the mass is directly proportional to the radius of curvature, i.e. $m\propto r$.
-Experimentally, we would notice that the glowing path of the ions would be wider, and therefore it would be difficult to measure
-the Helmholtz currents exactly at the far side of the pegs in the apparatus, like we did for the electrons, which had unvarying masses.
-This ambiguity would also skew our measured charge to mass ratio, since the charged masses are varied and not constant.
+We can also find the simplified expression for $B_s$ in the centre of a real solenoid as follows:
+$$1$$
+Next, the expression for $B_c$ in the center of a single coil can be found:
+$$2$$
+Additionally, the expression for $B_H$ can be obtained from the expression for $B_c$ derived above:
+$$3$$
 
 \section{Conclusions}
-In Experiment 2, we calculate the charge to mass ratio $e/m$ of electrons fired in a Helmholtz coil, which are accelerated by an electric field, and
-deflected by a magnetic field to form a circular orbit. The apparatus
-was set up such that the magnetic field of the coil is aligned antiparallel to the earth's own magnetic field
-to simplify the geomery. The current was varied at three diferent voltages to align the electron loops to known radii, so that we could use the
-Helmholtz curents to calculate a value for $e/m$, and the earth's magnetic field $B_E$ by ploting a linear graph. We noticed that the
-radius of curvature of the electron loops increased as the Helmholtz current was lowered. Additionally, using the
-left hand rule (since electrons are negatively charged masses), we verified that the net magnetic field of the
-setup was directed upwards, in the same orientation of the coil (in other words, the direction of the net magnetic field
-was perpendicular to the radius of the coil). We calculated the charge to mass ratio of the electron to be ($\num{1.70e11} \pm \SI{4.91e9}{\coulomb\per\kilogram}$)
-and the earth's magnetic field to be
-($\num{4.00e-5} \pm \,\SI{6.40e-6}{\tesla}$). While these values are in the same order of magnitude as the
-expected values ( $\SI{1.76e11}{\coulomb\per\kilogram}$ for $e/m$
-and $4.8 \pm \,\SI{0.3e-5}{\tesla}$ for $B_E$), these values do not agree within error. The
-graph generated from our data was linear, however, so it is likely that the source of error introduced was a
-constant factor, whether it's miscalibration of equipment, or human error since we took care to record our
-results in a consistent manner.
+
+In Experiment 2, we measure the distribution of the magnetic field across a solenoid,
+and we also measure the magnetic field of a Helmholtz coil from which we experimentally determine the
+number of turns of the wire in the coil. In the first part, q Hall probe was used to measure the magnetic field
+at various points inside a solenoid. The graph produced from our experimental values
+closely matched the shape of the theoretical curve, even though the measured values were
+quite different from the theoretical values. It should be noted that if each recorded
+data point was offset by some correction amount, the measured values would fit the
+theoretical curve very nicely, which implies that the Hall probe
+was likely miscalibrated. In part 2, the Hall probe was used to measure the magnetic field
+at the center of the Helmholtz coils with varying current, from which we could experimentally
+determine the number of turns of the wire in the coils. The measured values were XXXXXXXXXXXXXXXXXXXXXXx
+and compared to the theoretical XXXXXXXXXXXXXx it did / did not agree within error.
+% In Experiment 3, we calculate the charge to mass ratio $e/m$ of electrons fired in a Helmholtz coil, which are accelerated by an electric field, and
+% deflected by a magnetic field to form a circular orbit. The apparatus
+% was set up such that the magnetic field of the coil is aligned antiparallel to the earth's own magnetic field
+% to simplify the geomery. The current was varied at three diferent voltages to align the electron loops to known radii, so that we could use the
+% Helmholtz curents to calculate a value for $e/m$, and the earth's magnetic field $B_E$ by ploting a linear graph. We noticed that the
+% radius of curvature of the electron loops increased as the Helmholtz current was lowered. Additionally, using the
+% left hand rule (since electrons are negatively charged masses), we verified that the net magnetic field of the
+% setup was directed upwards, in the same orientation of the coil (in other words, the direction of the net magnetic field
+% was perpendicular to the radius of the coil). We calculated the charge to mass ratio of the electron to be ($\num{1.70e11} \pm \SI{4.91e9}{\coulomb\per\kilogram}$)
+% and the earth's magnetic field to be
+% ($\num{4.00e-5} \pm \,\SI{6.40e-6}{\tesla}$). While these values are in the same order of magnitude as the
+% expected values ( $\SI{1.76e11}{\coulomb\per\kilogram}$ for $e/m$
+% and $4.8 \pm \,\SI{0.3e-5}{\tesla}$ for $B_E$), these values do not agree within error. The
+% graph generated from our data was linear, however, so it is likely that the source of error introduced was a
+% constant factor, whether it's miscalibration of equipment, or human error since we took care to record our
+% results in a consistent manner.
 
 \bibliography{references}
 \end{document}
