@@ -46,7 +46,7 @@
         TA: Andrei Tretiakov
         \vspace{1cm}
 
-        Date of Lab: \today
+        Date of Lab: March 22, 2018%\today
         \vfill
     \end{center}
 \end{titlepage}
@@ -62,8 +62,16 @@
 % Provide equations you used\\
 % ○ Identify all symbols\\
 
-In this experiment, we measure the charge to mass ratio $e/m$ of electrons fired in a
-Helmholtz coil.
+In this experiment, we measure the distribution of the magnetic field across a solenoid, and
+we also measure the magnetic field of a Helmholtz coil, from which we experimentally determine the
+number of turns of the wire in the coil. The right hand rule is used to determine the
+direction of the magnetic $\textbf{B}$ field in the coils of wire. The right handed rule
+is defined as follows: the four main fingers of one's right hand curls in the direction of the
+current in the wire, and the resulting direction in which the thumb points is the direction of the
+$\textbf{B}$ field.
+\textbf{By doing shit, and using these equations, we can determine other shit, and then
+we can see even more shit by plotting a graph using a linearized version of this
+shit equation}
 The electrons are emmitted from a hot filament, accelerated by an electric field, and then deflected
 by a magnetic field into a circular orbit. If the radius of this orbit is known,
 as well as the intensity of the magnetic field, and the accelerating potential of the
@@ -74,12 +82,15 @@ The charge to mass ratio is found using the following equation, of which a deriv
 The equation below is also linearized, and graphed, from which we obtain an approximate value of the earth's magnetic field using the
 Y-intercept, and $e/m$ from the slope.
 \begin{equation}
-  \frac{e}{m} = \frac{2V}{(B_H-B_E)^2r^2}
+  B=\frac{1}{2}\mu_0nI(\cos{\Beta_2}-cos{\Beta_1})
 \end{equation}
 In this equation, $e$ is the charge of an electron, and $m$ is the mass of the electron, `V' is the DC voltage applied to the Helmholtz coil
 , $B_H$ is the magnetic field of the coil, given by
 \begin{equation}
-  B_H=\frac{8\mu_0 NI}{ \sqrt{125} R}
+  B_c=\frac{\frac{1}{2}\mu_0NR^2I}{(R^2+(x-x_c)^2)^{\frac{3}{2}}}
+\end{equation}
+\begin{equation}
+  B_H=\frac{8\mu_0NI}{\sqrt{125}R}
 \end{equation}
 ,and r is the orbit radius of the electrons. In Equation 2 above, $\mu_0$ is the permeability permeability of free space,
 $N$ is the number of turns in the Helmholtz coil, $R$ is the radius of the coil, and $I$ is the measured current through the
@@ -99,6 +110,7 @@ coil.
 % able to reproduce your results without a
 % manual
 
+%use p1-2 and p2-3 to show setup
 \textbf{List of Equipment:}
 \begin{itemize}
   \item Helmholtz coil apparatus (Figures 1 and 2)
