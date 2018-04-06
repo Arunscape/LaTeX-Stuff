@@ -361,65 +361,90 @@ Thus, we conclude $n=6.04\pm0.06$. Since the nickel does not produce its own mag
 
 \section{Discussion}
 
-To obtain our graph, Equation 1 was linearized in the following manner:
-\subsection{Part 1}
-
-The right hand rule is used to determine the
-direction of the magnetic $\textbf{B}$ field in the coils of wire. In the case of the
-solenoid, the magnetic field is illustrated in Figure 5 below:
-
-% \begin{figure}[H]
-%  \centering
-%  \includegraphics[width=\textwidth]{question1.jpg}
-%  \caption{Orientation of \textbf{B} vector for a solenoid with current \textbf{I} running through it.}
-% \end{figure}
-
-From Figure 4, we can see that the experimental values measured are quite different
-compared to the theoretical values. However, the shape of both curves are very similar.
-In fact, if the experimental values were offset by a scaling factor $\frac{B_t}{B_{exp}}=1.33$ , our
-measured results would be extremely close to the expected theoretical curve. Therefore,
-the cause of error is constant, which implies that the Hall probe is likely miscalibrated,
-or it could be a result of our equations not taking into account the internal resistance of the wires.
+From our results, we were able to clearly classify the magnetic materials as either soft ferromagnetic or hard ferromagnetic.
+With experimentally determined values of $3.36\pm0.02$ for the fridge magnet, and $6.04\pm0.06$ for n in Equation 1, we
+clearly see that the inverse power law relation for the magnetic force as a function of distance acting on the Canadian nickel falls off quite faster
+than the magnetic force on the fridge magnet. This implies that the nickel is the soft ferromagnetic material, while the permanent fridge magnet is the
+hard ferromagnetic material. However, our experimentally determined results do not agree within error of the expected values.
+For hard ferromagnetic samples, an inverse $4^{th}$ power law is expected, while for soft ferromagnets, is expected.
+Although our results did not agree within error of the expected values,
+the graphs both fit linear curves, with no noticeable anomalous data points relative to the trendlines.
+This implies the source of error was constant, which can likely be attributed to a combination of the following:
+While attempting to measure the weights on the balance, the readings fluctuated which made it difficult to
+measure accurately. It is also likely that human error was introduced from measuring the distances, and/or
+not having the strong rare-earth magnet's center directly align with the magnetic specimens' centres even though
+we tried to minimize these sources of error.
 
 
 
-\subsection{Part 2}
+To obtain our graph, Equation 1 was linearized to obtain:
+$$\ln(|F_m|)=-n\ln(z)+ln(C)$$
+For both materials, C had to be positive, or it would have been impossible to
+obtain the natural logarithm $\ln(C)$.
+Therefore, in Equation 3, $\chi$ must be positive, in order for C to be positive.
+This is further reinforced by the fact that the magnetic force is attractive when the
+strong magnet gets close to the nickel, which is a soft ferromagnetic material and therefore has the inverse $7^{th}$ power
+relation expressed in Equation 3.
 
 
-The graph produced (Figure 5) is linear as expected, with no anomalous data points.
-Using the scaling factor 1.33 derived in part 1 of the experiment, we obtain the value $N=132 \pm 1$,
-from the slope of the graph in Figure 5, which agrees within error of the theoretical value 133.
-
-% \begin{figure}[H]
-%   \centering
-%   \includegraphics[width=\textwidth]{fig3.jpg}
-%   \caption{The direction of the \textbf{B} field is found to be pointing out of the page when drawn this way.}
-% \end{figure}
-
-% SOME MORE DERIVATIONS AS FOLLOWS:
-
-Using equation 1, and the geometry from Figure 1, we can find a simplified expression for $B_s$ in the centre of a real solenoid as follows:
-$$ \cos{\beta_2} = \frac{L/2}{\sqrt{R^2+L^2/4}}$$
-$$ \cos{\beta_1} = \sin{(\pi/2 - \beta_1)} = -\sin{(\beta_1-\pi/2)} = -\frac{L/2}{\sqrt{R^2+L^2/4}}  $$
-Substituting into equation 1 yields:
-$$ B_s = 1/2 \mu_0nI \left(\frac{L/2}{\sqrt{R^2+\frac{L^2}{4}}} + \frac{L/2}{\sqrt{R^2+\frac{L^2}{4}}} \right) =  1/2\mu_0nI \left(\frac{L}{\sqrt{R^2+\frac{L^2}{4}}} \right)= \frac{\mu_0nIL}{\sqrt{4R^2+L^2}}$$
-Since $n=N/L$, we can substitute $nL=N$ to finally obtain:
-$$ B_s= \frac{\mu_0NI}{\sqrt{4R^2+L^2}} $$
-%and compare it to the
-%expected value of 133. The radius of each coil is $14.8\pm 0.2cm$
-
-We can also find an expression for $B_c$ in the centre of a single coil using Equation 2 as follows:\\
-At the centre of the coil, $x=x_c$ to obtain:
-$$ B_c = \frac{\frac{1}{2} \mu_0NR^2I}{(R^2+(x_c-x_c)^2)^{3/2}} $$
-which simplifies nicely:
-$$ \frac{\frac{1}{2} \mu_0NR^2I}{(R^2)^{3/2}} = \frac{\frac{1}{2} \mu_0NR^2I}{R^3}  $$
-$$ \therefore B_c = \frac{\frac{1}{2} \mu_0NI}{2R} $$
-
-Additionally, the expression for $B_H$ can be obtained from the expression for $B_c$ derived above. By inspection,
-we notice that $x-x_c=R/2$, which we can substitute into Equation 2 to obtain:
-$$ B_c= \frac{\frac{1}{2}\mu_0NR^2I}{(R^2+(\frac{R}{2})^2)^{3/2}} = \frac{\frac{1}{2}\mu_0NR^2I}{\frac{\sqrt{125}}{8}R^3} = \frac{1}{2}\times \frac{8\mu_0NI}{\sqrt{125}R} $$
-and by realizing that $2B_c=B_H$, we finally obtain Equation 3 by multiplying the above expression by 2:
-$$B_H=\frac{8\mu_0NI}{\sqrt{125}R}$$
+% \subsection{Part 1}
+%
+% The right hand rule is used to determine the
+% direction of the magnetic $\textbf{B}$ field in the coils of wire. In the case of the
+% solenoid, the magnetic field is illustrated in Figure 5 below:
+%
+% % \begin{figure}[H]
+% %  \centering
+% %  \includegraphics[width=\textwidth]{question1.jpg}
+% %  \caption{Orientation of \textbf{B} vector for a solenoid with current \textbf{I} running through it.}
+% % \end{figure}
+%
+% From Figure 4, we can see that the experimental values measured are quite different
+% compared to the theoretical values. However, the shape of both curves are very similar.
+% In fact, if the experimental values were offset by a scaling factor $\frac{B_t}{B_{exp}}=1.33$ , our
+% measured results would be extremely close to the expected theoretical curve. Therefore,
+% the cause of error is constant, which implies that the Hall probe is likely miscalibrated,
+% or it could be a result of our equations not taking into account the internal resistance of the wires.
+%
+%
+%
+% \subsection{Part 2}
+%
+%
+% The graph produced (Figure 5) is linear as expected, with no anomalous data points.
+% Using the scaling factor 1.33 derived in part 1 of the experiment, we obtain the value $N=132 \pm 1$,
+% from the slope of the graph in Figure 5, which agrees within error of the theoretical value 133.
+%
+% % \begin{figure}[H]
+% %   \centering
+% %   \includegraphics[width=\textwidth]{fig3.jpg}
+% %   \caption{The direction of the \textbf{B} field is found to be pointing out of the page when drawn this way.}
+% % \end{figure}
+%
+% % SOME MORE DERIVATIONS AS FOLLOWS:
+%
+% Using equation 1, and the geometry from Figure 1, we can find a simplified expression for $B_s$ in the centre of a real solenoid as follows:
+% $$ \cos{\beta_2} = \frac{L/2}{\sqrt{R^2+L^2/4}}$$
+% $$ \cos{\beta_1} = \sin{(\pi/2 - \beta_1)} = -\sin{(\beta_1-\pi/2)} = -\frac{L/2}{\sqrt{R^2+L^2/4}}  $$
+% Substituting into equation 1 yields:
+% $$ B_s = 1/2 \mu_0nI \left(\frac{L/2}{\sqrt{R^2+\frac{L^2}{4}}} + \frac{L/2}{\sqrt{R^2+\frac{L^2}{4}}} \right) =  1/2\mu_0nI \left(\frac{L}{\sqrt{R^2+\frac{L^2}{4}}} \right)= \frac{\mu_0nIL}{\sqrt{4R^2+L^2}}$$
+% Since $n=N/L$, we can substitute $nL=N$ to finally obtain:
+% $$ B_s= \frac{\mu_0NI}{\sqrt{4R^2+L^2}} $$
+% %and compare it to the
+% %expected value of 133. The radius of each coil is $14.8\pm 0.2cm$
+%
+% We can also find an expression for $B_c$ in the centre of a single coil using Equation 2 as follows:\\
+% At the centre of the coil, $x=x_c$ to obtain:
+% $$ B_c = \frac{\frac{1}{2} \mu_0NR^2I}{(R^2+(x_c-x_c)^2)^{3/2}} $$
+% which simplifies nicely:
+% $$ \frac{\frac{1}{2} \mu_0NR^2I}{(R^2)^{3/2}} = \frac{\frac{1}{2} \mu_0NR^2I}{R^3}  $$
+% $$ \therefore B_c = \frac{\frac{1}{2} \mu_0NI}{2R} $$
+%
+% Additionally, the expression for $B_H$ can be obtained from the expression for $B_c$ derived above. By inspection,
+% we notice that $x-x_c=R/2$, which we can substitute into Equation 2 to obtain:
+% $$ B_c= \frac{\frac{1}{2}\mu_0NR^2I}{(R^2+(\frac{R}{2})^2)^{3/2}} = \frac{\frac{1}{2}\mu_0NR^2I}{\frac{\sqrt{125}}{8}R^3} = \frac{1}{2}\times \frac{8\mu_0NI}{\sqrt{125}R} $$
+% and by realizing that $2B_c=B_H$, we finally obtain Equation 3 by multiplying the above expression by 2:
+% $$B_H=\frac{8\mu_0NI}{\sqrt{125}R}$$
 
 
 \section{Conclusions}
