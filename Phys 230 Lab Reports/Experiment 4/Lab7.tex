@@ -85,6 +85,7 @@ another hard ferromagnet, and a soft ferromagnet (a Canadian nickel).
 
 We expect the force-distance power law for the main types of magnetic materials to be in the following format:
 $$|F_m|=\frac{C}{z^n}, \hspace{1cm}n=4 \:or\: n=7,\hspace{0.5cm} C=some\:constants$$
+This relation is explored more deeply in the Discussions section.
 For hard ferromagnetic samples, an inverse $4^{th}$ power law is predicted $(n=4)$, while for soft ferromagnets, and paramagnetic and diamagnetic materials,
 an inverse $7^{th}$ power law is predicted. By analyzing the magnetic force of a strong neodymium magnet on our
 samples at various distances, we experimentally confirm that a Canadian nickel is a soft ferromagnetic material, while
@@ -143,7 +144,7 @@ of the rare-earth magnet to the top of the specimen, measured in metres.
 
 \section{Results}
 
-\subsection{Part 1}
+% \subsection{Part 1}
 
 The raw data recorded for the fridge magnet as a specimen are
 as follows:
@@ -207,13 +208,16 @@ as follows:
 
 \noindent Sample calculation of converting balance reading to force:
 \\\rule{10cm}{0.01cm}
-\begin{align}\\
- balance reading: 15.863g
- $$|F_m|=15.863g\times\frac{1kg}{1000g}\times\SI{9.81}{\metre\per\second^2}=\SI{3.92399999999957E-05}{\newton}$$
-\end{align}
+\\
+balance reading: 15.863g
+$$|F_m|=15.863g\times\frac{1kg}{1000g}\times\SI{9.81}{\metre\per\second^2}=\SI{3.92399999999957E-05}{\newton}$$
 
 A linear graph is produced by plotting the natural logarithm of distance from rare-earth magnet to fridge magnet vs. the natural logarithm of the force measured by the balance.
-From \textbf{SOME EQUATION IDK WHICH ONE}, we can easily see that the slope corresponds to the value n.
+i.e. we plot $\ln(z)$ on the x-axis and $\ln(|F_m|)$ on the y-axis to obtain Figures 2 and 3.
+From Equation 1, we can easily see that the slope corresponds to the value -n as follows:
+$$|F_m|=\frac{C}{z^n}$$
+$$\ln(|F_m|)=\ln\left(\frac{C}{z^n}\right)$$
+$$\ln(|F_m|)=-n\ln(z)+ln(C)$$
 
 \begin{figure}[H]
  \centering
@@ -275,6 +279,8 @@ The graph is also produced in the exact same way as before with the fridge magne
 $$Slope =-6.04142520404573 \pm 0.055033493756539 $$
 
 Thus, we conclude $n=6.04\pm0.06$. Since the nickel does not produce its own magnetic field, but is strongly attracted to hard ferromagnetic material, it is a soft ferromagnetic material, and n is expected to be 7.
+
+
 % \\ \\
 % \subsection{Part 2}
 %
@@ -355,17 +361,18 @@ Thus, we conclude $n=6.04\pm0.06$. Since the nickel does not produce its own mag
 
 \section{Discussion}
 
+To obtain our graph, Equation 1 was linearized in the following manner:
 \subsection{Part 1}
 
 The right hand rule is used to determine the
 direction of the magnetic $\textbf{B}$ field in the coils of wire. In the case of the
 solenoid, the magnetic field is illustrated in Figure 5 below:
 
-\begin{figure}[H]
- \centering
- \includegraphics[width=\textwidth]{question1.jpg}
- \caption{Orientation of \textbf{B} vector for a solenoid with current \textbf{I} running through it.}
-\end{figure}
+% \begin{figure}[H]
+%  \centering
+%  \includegraphics[width=\textwidth]{question1.jpg}
+%  \caption{Orientation of \textbf{B} vector for a solenoid with current \textbf{I} running through it.}
+% \end{figure}
 
 From Figure 4, we can see that the experimental values measured are quite different
 compared to the theoretical values. However, the shape of both curves are very similar.
