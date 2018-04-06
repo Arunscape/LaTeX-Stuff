@@ -202,132 +202,147 @@ as follows:
    0.054          & 20.578              & 0.04629339           & -2.91877123241786  & -3.07275609266061 \\ \hline
   \end{tabular}%
  }
- \caption{Measurements of force on the electronic balance with the rare-earth magnet at various distances}
+ \caption{Measurements of force on the electronic balance with the rare-earth magnet and the fridge magnet at various distances}
 \end{table}
 
-
-
-\begin{table}[]
- \centering
- \begin{tabular}{|c|c|c|c|}
-  \hline
-  Measured B (mT) & x (m) & Corrected  $(B - B_E),\pm 2\%$ (T) & Theory $B_t$ \\ \hline
-  0.50            & 0.099 & 7.57E-04                           & 1.03E-03     \\ \hline
-  1.40            & 0.119 & 1.65E-03                           & 2.21E-03     \\ \hline
-  1.99            & 0.139 & 2.25E-03                           & 2.93E-03     \\ \hline
-  2.19            & 0.159 & 2.45E-03                           & 3.18E-03     \\ \hline
-  2.26            & 0.179 & 2.52E-03                           & 3.27E-03     \\ \hline
-  2.27            & 0.199 & 2.53E-03                           & 3.31E-03     \\ \hline
-  2.25            & 0.219 & 2.51E-03                           & 3.33E-03     \\ \hline
-  2.25            & 0.239 & 2.50E-03                           & 3.34E-03     \\ \hline
-  2.25            & 0.259 & 2.51E-03                           & 3.34E-03     \\ \hline
-  2.26            & 0.279 & 2.52E-03                           & 3.33E-03     \\ \hline
-  2.25            & 0.299 & 2.51E-03                           & 3.32E-03     \\ \hline
-  2.23            & 0.319 & 2.48E-03                           & 3.28E-03     \\ \hline
-  2.18            & 0.339 & 2.44E-03                           & 3.20E-03     \\ \hline
-  2.02            & 0.359 & 2.28E-03                           & 2.98E-03     \\ \hline
-  1.56            & 0.379 & 1.82E-03                           & 2.36E-03     \\ \hline
-  0.65            & 0.399 & 9.11E-04                           & 1.18E-03     \\ \hline
- \end{tabular}
- \caption{Raw data recorded while measuring $B_s$ as the Hall probe was moved in 2 centimetre increments.}
-\end{table}
-
-Using the data in Table 2, a graph is generated (Figure 4), such that we can compare our
-experimental data to a theoretical curve. A sample calculation for the corrected $B-B_E$
-is as follows:
-$$ B-B_E = 0.5 mT - (-0.257 mT) = 0.757 mT = \SI{7.57e-4}{\tesla}$$
-The theoretical $B_t$ was calculated using the Excel template downloaded from eclass.
-
-By inspection of Figure 4 and Table 2, the ratio $\frac{B_t}{B_{exp}}$ can
-be calculated, which is used to scale the slope found in Part 2 of the experiment,
-which in turn is used to determine the experimental value of $N$, the number of turns in the coil.
-$\frac{B_t}{B_{exp}}$ is found by picking two data points in the centre of the plateau:
-$${Theoretical: } (0.259, \num{3.43e-3})$$
-$${Experimental: } (0.259, \num{2.51e-3})$$
-$$\therefore \frac{B_t}{B_{exp}}= \frac{\num{3.43e-3}}{\num{2.51e-3}}=1.33$$
+\textbf{Some shit is linearized and we obtain the following graph:}
 \begin{figure}[H]
  \centering
- \includegraphics[width=\textwidth]{part1graph.jpg}
- \caption{Experimental values of B field in solenoid compared to theoretical values}
+ \includegraphics[width=\textwidth]{ferromagnet.jpg}
+ \caption{Natual logarithm of distance from rare-earth magnet to fridge magnet vs. natural logarithm of the force measured by the balance }
 \end{figure}
 
+\noindent Using Excel's LINEST function, we obtain the following data from the graph in Figure 2:
+$$Slope =-3.35557684075733 \pm 0.018881754523524 $$
 
-\subsection{Part 2}
-
-The raw data recorded for part 2 where we beasure $B_H$ in the
-Helmholtz coils as a function of current is outlined in Table 2.
-
+Thus, we conclude $n=3.36\pm0.02$. Since the fridge magnet is a permanent magnet, it is a hard ferromagnetic material, and n is expected to be 4.
+\\ \\
+Next, the raw data recorded for the Canadian nickel as the specimen is as follows:
 \begin{table}[H]
  \centering
- \begin{tabular}{|c|c|}
-  \hline
-  Current (A) & $B_H (T)$          \\ \hline
-  0.1         & -0.000194861519119 \\ \hline
-  0.2         & -0.000133962572081 \\ \hline
-  0.3         & -6.99808991888E-05 \\ \hline
-  0.4         & -1.21344552038E-05 \\ \hline
-  0.5         & 4.36568382113E-05  \\ \hline
-  0.6         & 0.000108031407536  \\ \hline
-  0.7         & 0.000168628126549  \\ \hline
-  0.8         & 0.000230010638426  \\ \hline
-  0.9         & 0.000286799284324  \\ \hline
-  1           & 0.000351052962439  \\ \hline
- \end{tabular}
- \caption{Measured magnitudes of $B_H$ when varying the current in the coil in 0.1A increments}
+ \resizebox{\textwidth}{!}{%
+  \begin{tabular}{|c|c|c|c|c|}
+   \hline
+   distance z (m) & balance reading (g) & $|F_m|$ (N)           & $\ln(z)$          & $\ln(|F_m|)$      \\ \hline
+   0.113          & 3.948               & -3.924E-05            & -10.1458139232671 & -2.1803674602698  \\ \hline
+   0.093          & 3.942               & -9.80999999999979E-05 & -9.22952319139298 & -2.37515578582888 \\ \hline
+   0.083          & 3.937               & -0.00014715           & -8.82405808328478 & -2.48891467118554 \\ \hline
+   0.073          & 3.912               & -0.0003924            & -7.84322883027307 & -2.61729583783375 \\ \hline
+   0.063          & 3.857               & -0.00093195           & -6.97823139278646 & -2.7646205525906  \\ \hline
+   0.058          & 3.793               & -0.00155979           & -6.46320408216677 & -2.84731226843572 \\ \hline
+   0.056          & 3.753               & -0.00195219           & -6.23880345966251 & -2.88240358824699 \\ \hline
+   0.055          & 3.731               & -0.00216801           & -6.13394558286925 & -2.90042209374967 \\ \hline
+   0.054          & 3.698               & -0.00249174           & -5.99477401736847 & -2.91877123241786 \\ \hline
+   0.053          & 3.665               & -0.00281547           & -5.87262606862738 & -2.93746336543002 \\ \hline
+   0.052          & 3.635               & -0.00310977           & -5.77320651050972 & -2.95651156040071 \\ \hline
+   0.051          & 3.589               & -0.00356103           & -5.63770545012215 & -2.97592964625781 \\ \hline
+   0.05           & 3.537               & -0.00407115           & -5.5038297641563  & -2.99573227355399 \\ \hline
+   0.049          & 3.486               & -0.00457146           & -5.38792265026136 & -3.01593498087151 \\ \hline
+   0.048          & 3.424               & -0.00517968           & -5.26301200068074 & -3.03655426807425 \\ \hline
+   0.047          & 3.347               & -0.00593505           & -5.12687982635616 & -3.05760767727208 \\ \hline
+   0.046          & 3.268               & -0.00671004           & -5.00415036676445 & -3.07911388249304 \\ \hline
+   0.045          & 3.168               & -0.00769104           & -4.86769926403659 & -3.10109278921182 \\ \hline
+   0.044          & 3.052               & -0.008829             & -4.72971352106269 & -3.12356564506388 \\ \hline
+   0.043          & 2.9                 & -0.01032012           & -4.57365989108935 & -3.14655516328857 \\ \hline
+   0.042          & 2.738               & -0.01190934           & -4.43043231276756 & -3.17008566069877 \\ \hline
+   0.041          & 2.547               & -0.01378305           & -4.28431570261916 & -3.19418321227783 \\ \hline
+   0.04           & 2.312               & -0.0160884            & -4.12965676356876 & -3.2188758248682  \\ \hline
+   0.039          & 2.042               & -0.0187371            & -3.97724976334633 & -3.24419363285249 \\ \hline
+   0.038          & 1.726               & -0.02183706           & -3.82414675255151 & -3.27016911925575 \\ \hline
+   0.037          & 1.349               & -0.02553543           & -3.66768837939244 & -3.29683736633791 \\ \hline
+   0.036          & 0.86                & -0.03033252           & -3.49553487467969 & -3.32423634052603 \\ \hline
+   0.035          & 0.237               & -0.03644415           & -3.31197432723514 & -3.35240721749272 \\ \hline
+  \end{tabular}
+ }
+ \caption{Measurements of force on the electronic balance with the rare-earth magnet and the Canadian nickel at various distances}
 \end{table}
-
-Given that $R=14.8 \pm 0.2 cm$, we can linearize Equation 3 to
-generate a graph (Figure 5), from which we can determine the experimental
-value for N  as follows:
-
-$$ B_H = \frac{8\mu_0NI}{\sqrt{125}R} \Rightarrow B_H = N\left( \frac{8\mu_0I}{\sqrt{125}R} \right)  $$
-% $$ \therefore B_H = \frac{8 \times \SI{4 \pi e-7}{\tesla\metre\per\ampere}}{\sqrt{125}(\SI{14.8}{\cm})}$$
-% $$ \Rightarrow N = \frac{B_H \sqrt{125} R}{8\mu_0I} $$
-% $$ \therefore N= \frac{}{} $$
-%  so we generate a graph
-% with $\frac{\sqrt{2V}}{r}$ on the X axis using our measured voltage values, and $B_H$ on the Y axis
-% using our measured current values.
-Using the form above, we can plot a graph, such that
-$B_H$ is on the y-axis, and $\frac{8\mu_0NI}{\sqrt{125}R}$ is plotted on the x-axis.
-Then, our experimental value for N will be the slope, and the y-intercept should theoretically be zero.
+The graph is also produced in the exact same way as before with the fridge magnet specimen:
 \begin{figure}[H]
  \centering
- \includegraphics[width=\textwidth]{p2graph.jpg}
- \caption{$B_H$ as a function of current}
+ \includegraphics[width=\textwidth]{nickel.jpg}
+ \caption{Natual logarithm of distance from rare-earth magnet to Canadian nickel vs. natural logarithm of the force measured by the balance }
 \end{figure}
+\noindent Using Excel's LINEST function, we obtain the following data from the graph in Figure 3:
+$$Slope =-6.04142520404573 \pm 0.055033493756539 $$
 
-\newpage
-\noindent Using Excel's LINEST function, we obtain the following data from the graph in Figure 5.
-\begin{table}[H]
- \centering
- \begin{tabular}{cc}
-  Slope & $=99.4073706 \pm 0.3873961 $ \\
-        & $=99.4 \pm 0.4$
-  % Y-Intercept: &  $\num{3.99642631798173E-05}\pm \num{6.40167504007098E-06}$ \\
- \end{tabular}
- % \caption{LINEST data from the graph in Figure 3}
-\end{table}
-
-Now, our slope corresponds to N, however to determine our experimental
-value for N, we use the scaling factor $\frac{B_t}{B_{exp}}=1.33$ which was
-determined in Part 1 of the experiment.
-
-$$ N= 99.4 \times 1.33 \approx 132 \:turns $$
-$$ \delta N   = 0.4 \times 1.33 \approx 1 $$
-$$ \therefore N = 132 \pm 1 \:turns$$
-The theoretical $N=133$
-
-% \vspace{1cm}
-% \noindent The calculated values of $e/m$ and $B_E$ from the graph are summarized in Table 3.
+Thus, we conclude $n=6.04\pm0.06$. Since the nickel does not produce its own magnetic field, but is stringly attracted to hard ferromagnetic material, it is a soft ferromagnetic material, and n is expected to be 7.
+% \\ \\
+% \subsection{Part 2}
+%
+% The raw data recorded for part 2 where we beasure $B_H$ in the
+% Helmholtz coils as a function of current is outlined in Table 2.
+%
 % \begin{table}[H]
-% \centering
-% \begin{tabular}{c|c|c|c|}
-%                 & Expected                      & Calculated:                                     & \% Error \\ \hline
-% $e/m$: & $\SI{1.76e11}{\coulomb\per\kilogram}$      & $\num{1.70e11} \pm \SI{4.91e9}{\coulomb\per\kilogram}$  &    $3.52$  \\ \hline
-% $B_E$: & $4.8 \pm \,\SI{0.3e-5}{\tesla}$           & $\num{4.00e-5} \pm \,\SI{6.40e-6}{\tesla}$                    &   $16.74$  \\ \hline
-% \end{tabular}
-% \caption{Measured values of $e/m$ and $B_E$ compared to the calculated values obtained from the graph.}
+%  \centering
+%  \begin{tabular}{|c|c|}
+%   \hline
+%   Current (A) & $B_H (T)$          \\ \hline
+%   0.1         & -0.000194861519119 \\ \hline
+%   0.2         & -0.000133962572081 \\ \hline
+%   0.3         & -6.99808991888E-05 \\ \hline
+%   0.4         & -1.21344552038E-05 \\ \hline
+%   0.5         & 4.36568382113E-05  \\ \hline
+%   0.6         & 0.000108031407536  \\ \hline
+%   0.7         & 0.000168628126549  \\ \hline
+%   0.8         & 0.000230010638426  \\ \hline
+%   0.9         & 0.000286799284324  \\ \hline
+%   1           & 0.000351052962439  \\ \hline
+%  \end{tabular}
+%  \caption{Measured magnitudes of $B_H$ when varying the current in the coil in 0.1A increments}
 % \end{table}
+%
+% Given that $R=14.8 \pm 0.2 cm$, we can linearize Equation 3 to
+% generate a graph (Figure 5), from which we can determine the experimental
+% value for N  as follows:
+%
+% $$ B_H = \frac{8\mu_0NI}{\sqrt{125}R} \Rightarrow B_H = N\left( \frac{8\mu_0I}{\sqrt{125}R} \right)  $$
+% % $$ \therefore B_H = \frac{8 \times \SI{4 \pi e-7}{\tesla\metre\per\ampere}}{\sqrt{125}(\SI{14.8}{\cm})}$$
+% % $$ \Rightarrow N = \frac{B_H \sqrt{125} R}{8\mu_0I} $$
+% % $$ \therefore N= \frac{}{} $$
+% %  so we generate a graph
+% % with $\frac{\sqrt{2V}}{r}$ on the X axis using our measured voltage values, and $B_H$ on the Y axis
+% % using our measured current values.
+% Using the form above, we can plot a graph, such that
+% $B_H$ is on the y-axis, and $\frac{8\mu_0NI}{\sqrt{125}R}$ is plotted on the x-axis.
+% Then, our experimental value for N will be the slope, and the y-intercept should theoretically be zero.
+% \begin{figure}[H]
+%  \centering
+%  \includegraphics[width=\textwidth]{p2graph.jpg}
+%  \caption{$B_H$ as a function of current}
+% \end{figure}
+%
+% \newpage
+% \noindent Using Excel's LINEST function, we obtain the following data from the graph in Figure 5.
+% \begin{table}[H]
+%  \centering
+%  \begin{tabular}{cc}
+%   Slope & $=99.4073706 \pm 0.3873961 $ \\
+%         & $=99.4 \pm 0.4$
+%   % Y-Intercept: &  $\num{3.99642631798173E-05}\pm \num{6.40167504007098E-06}$ \\
+%  \end{tabular}
+%  % \caption{LINEST data from the graph in Figure 3}
+% \end{table}
+%
+% Now, our slope corresponds to N, however to determine our experimental
+% value for N, we use the scaling factor $\frac{B_t}{B_{exp}}=1.33$ which was
+% determined in Part 1 of the experiment.
+%
+% $$ N= 99.4 \times 1.33 \approx 132 \:turns $$
+% $$ \delta N   = 0.4 \times 1.33 \approx 1 $$
+% $$ \therefore N = 132 \pm 1 \:turns$$
+% The theoretical $N=133$
+%
+% % \vspace{1cm}
+% % \noindent The calculated values of $e/m$ and $B_E$ from the graph are summarized in Table 3.
+% % \begin{table}[H]
+% % \centering
+% % \begin{tabular}{c|c|c|c|}
+% %                 & Expected                      & Calculated:                                     & \% Error \\ \hline
+% % $e/m$: & $\SI{1.76e11}{\coulomb\per\kilogram}$      & $\num{1.70e11} \pm \SI{4.91e9}{\coulomb\per\kilogram}$  &    $3.52$  \\ \hline
+% % $B_E$: & $4.8 \pm \,\SI{0.3e-5}{\tesla}$           & $\num{4.00e-5} \pm \,\SI{6.40e-6}{\tesla}$                    &   $16.74$  \\ \hline
+% % \end{tabular}
+% % \caption{Measured values of $e/m$ and $B_E$ compared to the calculated values obtained from the graph.}
+% % \end{table}
 
 \section{Discussion}
 
