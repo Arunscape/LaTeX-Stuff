@@ -205,11 +205,20 @@ as follows:
  \caption{Measurements of force on the electronic balance with the rare-earth magnet and the fridge magnet at various distances}
 \end{table}
 
-\textbf{Some shit is linearized and we obtain the following graph:}
+\noindent Sample calculation of converting balance reading to force:
+\\\rule{10cm}{0.01cm}
+\begin{align}\\
+ balance reading: 15.863g
+ $$|F_m|=15.863g\times\frac{1kg}{1000g}\times\SI{9.81}{\metre\per\second^2}=\SI{3.92399999999957E-05}{\newton}$$
+\end{align}
+
+A linear graph is produced by plotting the natural logarithm of distance from rare-earth magnet to fridge magnet vs. the natural logarithm of the force measured by the balance.
+From \textbf{SOME EQUATION IDK WHICH ONE}, we can easily see that the slope corresponds to the value n.
+
 \begin{figure}[H]
  \centering
  \includegraphics[width=\textwidth]{ferromagnet.jpg}
- \caption{Natual logarithm of distance from rare-earth magnet to fridge magnet vs. natural logarithm of the force measured by the balance }
+ \caption{Natural logarithm of distance from rare-earth magnet to fridge magnet vs. natural logarithm of the force measured by the balance }
 \end{figure}
 
 \noindent Using Excel's LINEST function, we obtain the following data from the graph in Figure 2:
@@ -260,12 +269,12 @@ The graph is also produced in the exact same way as before with the fridge magne
 \begin{figure}[H]
  \centering
  \includegraphics[width=\textwidth]{nickel.jpg}
- \caption{Natual logarithm of distance from rare-earth magnet to Canadian nickel vs. natural logarithm of the force measured by the balance }
+ \caption{Natural logarithm of distance from rare-earth magnet to Canadian nickel vs. natural logarithm of the force measured by the balance }
 \end{figure}
 \noindent Using Excel's LINEST function, we obtain the following data from the graph in Figure 3:
 $$Slope =-6.04142520404573 \pm 0.055033493756539 $$
 
-Thus, we conclude $n=6.04\pm0.06$. Since the nickel does not produce its own magnetic field, but is stringly attracted to hard ferromagnetic material, it is a soft ferromagnetic material, and n is expected to be 7.
+Thus, we conclude $n=6.04\pm0.06$. Since the nickel does not produce its own magnetic field, but is strongly attracted to hard ferromagnetic material, it is a soft ferromagnetic material, and n is expected to be 7.
 % \\ \\
 % \subsection{Part 2}
 %
