@@ -13,7 +13,9 @@
 \synctex=1
 
 \usepackage{lipsum}
-
+\usepackage{pgf-pie}
+\usepackage{adjustbox}
+\usepackage{float}
 %title page
 \title{Mass Effect 3 and the ????? Racism or Tensions Between Alien Species\\
 \vspace{.25cm}\large ENGL 199 Research Report \vspace{-.5cm}}
@@ -75,6 +77,11 @@ The narrative takes place in the future, where humans are no longer concerned ab
 tensions are between alien races. (If anything there are ideological tensions ie. with cerberus and the alliance but these
 tensions are not a result of racism amonsgt humans, but rather different ideological views of what is the best interest for the human race. (cerberus believes in using any methods (even illegal and terrorist like) for furthuring the human race.)
 both organizations goals are to ultimately do what they believe is best for the entire human race). Rather, racial tensions are observed betweeen different alien races.
+
+\begin{figure}
+ \includegraphics[scale=2]{paragon}
+ \caption{Most players choose the ethical option}
+\end{figure}
 %Talking about the Environment
 %\newpage
 
@@ -93,6 +100,15 @@ these alien races distrust each other because one developed a virus to wipe the
 other out. A staggering 92\% of the players choose to cure the genophage, which
 eases diplomatic tensions, and is considered the good option
 % \lipsum[1-2]
+\adjustbox{margin=10}{}
+\begin{figure}
+ \begin{adjustbox}{width=.4\textwidth}
+  \begin{tikzpicture}
+   \pie[pos={8,8},radius=1,explode =0.15]  {92/Cured, 8/Not Cured}
+  \end{tikzpicture}
+ \end{adjustbox}
+ \caption{Most players chose to cure the genophage}
+\end{figure}
 
 
 
@@ -104,10 +120,22 @@ machines more advanced, and in violation of the Citadel's rules these machines
 become a fully blows self-aware Artificial intelligence. The Quarians attempt to wipe them out, but the geth retaliate, and the Quarians lose millions of people, and are now nomads, and lose representation on the Citadel.
 The player chooses between saving the Quarians, or gaining the military support of the geth, who have free will.
 % \lipsum[5-6]
+\adjustbox{margin=10}{}
+\begin{figure}
+ \begin{adjustbox}{width=.35\textwidth}
+  \begin{tikzpicture}
+   \pie[pos={8,8},radius=1,explode =0.05]  {27/Quarians, 37/Geth, 36/Both}
+  \end{tikzpicture}
+ \end{adjustbox}
+ \caption{Players appear to place value in synthetic life}
+\end{figure}
 
 %Conclusion
 \section{Conclusion}
 \lipsum[7]
+\begin{figure}[H]
+ \includegraphics[scale=3]{hoursplayed.jpg}
+\end{figure}
 
 %causes all references in the bib file to be cited, even though you don't mention them in the paper
 \nocite{*}
