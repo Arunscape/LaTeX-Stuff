@@ -3,6 +3,7 @@
 
 \usepackage[margin=1in]{geometry}
 \usepackage{lipsum}
+
 \usepackage{setspace}
 \doublespacing
 \usepackage{parskip}
@@ -18,7 +19,13 @@
 % \usepackage[sfdefault]{noto}
 % \usepackage[T1]{fontenc}
 
-\usepackage[style=ieee]{biblatex}
+% \usepackage[
+%   style = IEEEtran,
+% ]{biblatex}
+\usepackage[
+    style=ieee,
+    backend=biber
+    ]{biblatex}
 \addbibresource{references.bib}
 
 \title{WKEXP 902 Work Term Report}
@@ -40,10 +47,16 @@
  Coordinator: Linda Szekely
 \end{titlepage}
 
-\section{todo}
-RIP
+\section{Introduction}
+The purpose of this report is to develop a profile of an industry which is of interest to me.
+By exploring different aspects of the industry, such as its history, 
+
+\section{Projected Economic Status}
+todo\cite{forbesprojected}\cite{Nobody06}
 
 \singlespacing
-\nocite{*}
+% \nocite{*}
 \printbibliography
+% \bibliographystyle{IEEEtran}
+% \bibliography{references}
 \end{document}
