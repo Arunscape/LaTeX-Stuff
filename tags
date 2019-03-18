@@ -1,0 +1,136 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/1a6076e9/
+%.pdf	Work-Term-Reports/wkexp902/Makefile	/^%.pdf: %.tex $/;"	t
+ATB Financial	resume/coop/resume.tex	/^    \\subsubsection{ATB Financial} \\hfill 2018$/;"	b	subsection:Computer Experience""Professional Experience
+Acknowledgment	ENGL-199/final assignment/IEEEtran/bare_conf.tex	/^\\section*{Acknowledgment}$/;"	s
+Acknowledgment	ENGL-199/final assignment/IEEEtran/bare_conf_compsoc.tex	/^  \\section*{Acknowledgment}$/;"	s
+Acknowledgments	ENGL-199/final assignment/IEEEtran/bare_conf_compsoc.tex	/^  \\section*{Acknowledgments}$/;"	s
+April 14	ENGL-199/final exam notes/final.tex	/^\\section{April 14}$/;"	s
+April 4	ENGL-199/video games/en.tex	/^\\section{April 4}$/;"	s
+April 6	ENGL-199/video games/en.tex	/^\\section{April 6}$/;"	s
+April 9	ENGL-199/video games/en.tex	/^\\section{April 9}$/;"	s
+Arch Linux Install Script	resume/coop/resume.tex	/^    \\subsubsection{Arch Linux Install Script}$/;"	b	subsection:Computer Experience""Other Projects
+Arduino Chess Game	resume/coop/resume.tex	/^    \\subsubsection{Arduino Chess Game}$/;"	b	subsection:Computer Experience""Other Projects
+Arguing by Degrees	ENGL-199/Skyfall notes/skyfall.tex	/^    \\section{Arguing by Degrees}$/;"	s
+Arun Woosaree	resume/coop/resume.tex	/^\\section{Arun Woosaree}$/;"	s
+Autopilot	ENGL-199/descriptive report/report.tex	/^  \\section{Autopilot}$/;"	s
+Brief History of the Industry	Work-Term-Reports/wkexp902/report.tex	/^\\section{Brief History of the Industry}$/;"	s
+Computer Experience	resume/coop/resume.tex	/^\\section{Computer Experience}$/;"	s
+Conclusion	ENGL-199/descriptive report/report.tex	/^  \\section{Conclusion}$/;"	s
+Conclusion	ENGL-199/final assignment/IEEEtran/bare_adv.tex	/^\\section{Conclusion}$/;"	s
+Conclusion	ENGL-199/final assignment/IEEEtran/bare_conf.tex	/^\\section{Conclusion}$/;"	s
+Conclusion	ENGL-199/final assignment/IEEEtran/bare_conf_compsoc.tex	/^\\section{Conclusion}$/;"	s
+Conclusion	ENGL-199/final assignment/IEEEtran/bare_jrnl.tex	/^\\section{Conclusion}$/;"	s
+Conclusion	ENGL-199/final assignment/IEEEtran/bare_jrnl_compsoc.tex	/^\\section{Conclusion}$/;"	s
+Conclusion	ENGL-199/final assignment/IEEEtran/bare_jrnl_comsoc.tex	/^\\section{Conclusion}$/;"	s
+Conclusion	ENGL-199/final assignment/IEEEtran/bare_jrnl_transmag.tex	/^\\section{Conclusion}$/;"	s
+Conclusion	ENGL-199/final assignment/report.tex	/^\\section{Conclusion}$/;"	s
+Conclusion	Work-Term-Reports/wkexp902/report.tex	/^\\section{Conclusion}$/;"	s
+Conclusions	Phys 230 Lab Reports/Experiment 1/Lab2.tex	/^\\section{Conclusions}$/;"	s
+Conclusions	Phys 230 Lab Reports/Experiment 2/Lab3.tex	/^\\section{Conclusions}$/;"	s
+Conclusions	Phys 230 Lab Reports/Experiment 3/Lab4.tex	/^\\section{Conclusions}$/;"	s
+Conclusions	Phys 230 Lab Reports/Experiment 4/Lab7.tex	/^\\section{Conclusions}$/;"	s
+Current hiring trends and long term prospects	Work-Term-Reports/wkexp902/report.tex	/^\\section{Current hiring trends and long term prospects}$/;"	s
+Discussion	Phys 230 Lab Reports/Experiment 1/Lab2.tex	/^\\section{Discussion}$/;"	s
+Discussion	Phys 230 Lab Reports/Experiment 2/Lab3.tex	/^\\section{Discussion}$/;"	s
+Discussion	Phys 230 Lab Reports/Experiment 3/Lab4.tex	/^\\section{Discussion}$/;"	s
+Discussion	Phys 230 Lab Reports/Experiment 4/Lab7.tex	/^\\section{Discussion}$/;"	s
+Economic Factors Influencing the Industry	Work-Term-Reports/wkexp902/report.tex	/^\\section{Economic Factors Influencing the Industry}$/;"	s
+Experimental Method	Phys 230 Lab Reports/Experiment 1/Lab2.tex	/^\\section{Experimental Method}$/;"	s
+Experimental Method	Phys 230 Lab Reports/Experiment 2/Lab3.tex	/^\\section{Experimental Method}$/;"	s
+Experimental Method	Phys 230 Lab Reports/Experiment 3/Lab4.tex	/^\\section{Experimental Method}$/;"	s
+Experimental Method	Phys 230 Lab Reports/Experiment 4/Lab7.tex	/^\\section{Experimental Method}$/;"	s
+Extremist Views - Cerberus Terrorist organization	ENGL-199/final assignment/report.tex	/^\\section{Extremist Views - Cerberus Terrorist organization}$/;"	s
+File Sorter	resume/coop/resume.tex	/^    \\subsubsection{File Sorter}$/;"	b	subsection:Computer Experience""Other Projects
+Grographic locations of industry concentration	Work-Term-Reports/wkexp902/report.tex	/^\\section{Grographic locations of industry concentration}$/;"	s
+HackED 2018	resume/coop/resume.tex	/^    \\subsubsection{HackED 2018}$/;"	b	subsection:Computer Experience""Hackathons
+HackED Beta 2017	resume/coop/resume.tex	/^    \\subsubsection{HackED Beta 2017}$/;"	b	subsection:Computer Experience""Hackathons
+Hackathons	resume/coop/resume.tex	/^  \\subsection{Hackathons}$/;"	u	section:Computer Experience
+Introduction	ENGL-199/descriptive report/report.tex	/^  \\section{Introduction}$/;"	s
+Introduction	ENGL-199/final assignment/IEEEtran/bare_adv.tex	/^\\IEEEraisesectionheading{\\section{Introduction}\\label{sec:introduction}}$/;"	s
+Introduction	ENGL-199/final assignment/IEEEtran/bare_adv.tex	/^\\section{Introduction}$/;"	s
+Introduction	ENGL-199/final assignment/IEEEtran/bare_conf.tex	/^\\section{Introduction}$/;"	s
+Introduction	ENGL-199/final assignment/IEEEtran/bare_conf_compsoc.tex	/^\\section{Introduction}$/;"	s
+Introduction	ENGL-199/final assignment/IEEEtran/bare_jrnl.tex	/^\\section{Introduction}$/;"	s
+Introduction	ENGL-199/final assignment/IEEEtran/bare_jrnl_compsoc.tex	/^\\IEEEraisesectionheading{\\section{Introduction}\\label{sec:introduction}}$/;"	s
+Introduction	ENGL-199/final assignment/IEEEtran/bare_jrnl_comsoc.tex	/^\\section{Introduction}$/;"	s
+Introduction	ENGL-199/final assignment/IEEEtran/bare_jrnl_transmag.tex	/^\\section{Introduction}$/;"	s
+Introduction	ENGL-199/final assignment/report.tex	/^\\section{Introduction}$/;"	s
+Introduction	Phys 230 Lab Reports/Experiment 1/Lab2.tex	/^\\section{Introduction}$/;"	s
+Introduction	Phys 230 Lab Reports/Experiment 2/Lab3.tex	/^\\section{Introduction}$/;"	s
+Introduction	Phys 230 Lab Reports/Experiment 3/Lab4.tex	/^\\section{Introduction}$/;"	s
+Introduction	Phys 230 Lab Reports/Experiment 4/Lab7.tex	/^\\section{Introduction}$/;"	s
+Introduction	Work-Term-Reports/wkexp902/report.tex	/^\\section{Introduction}$/;"	s
+Learning Opportunities	Work-Term-Reports/wkexp901/report.tex	/^\\section{Learning Opportunities}$/;"	s
+Major empoloyers	Work-Term-Reports/wkexp902/report.tex	/^\\section{Major empoloyers}$/;"	s
+March 14	ENGL-199/Skyfall notes/skyfall.tex	/^  \\section{March 14}$/;"	s
+March 16	ENGL-199/Skyfall notes/skyfall.tex	/^  \\section{March 16}$/;"	s
+March 19	ENGL-199/Skyfall notes/skyfall.tex	/^    \\section{March 19}$/;"	s
+March 7, looking at scene 9	ENGL-199/blade runner notes/bladerunner movie notes.tex	/^  \\section{March 7, looking at scene 9}$/;"	s
+Movie begins	ENGL-199/Skyfall notes/skyfall.tex	/^  \\subsection{Movie begins}$/;"	u	section:March 14
+Often in Hollywood movies, the villain is associated with technology	ENGL-199/Skyfall notes/skyfall.tex	/^    \\section{Often in Hollywood movies, the villain is associated with technology}$/;"	s
+Other	resume/coop/resume.tex	/^\\section{Other}$/;"	s
+Other Projects	resume/coop/resume.tex	/^  \\subsection{Other Projects}$/;"	u	section:Computer Experience
+Overview	Work-Term-Reports/wkexp901/report.tex	/^\\section{Overview}$/;"	s
+Part 1	Phys 230 Lab Reports/Experiment 1/Lab2.tex	/^\\subsection{Part 1}$/;"	u	section:Discussion
+Part 1	Phys 230 Lab Reports/Experiment 1/Lab2.tex	/^\\subsection{Part 1}$/;"	u	section:Experimental Method
+Part 1	Phys 230 Lab Reports/Experiment 1/Lab2.tex	/^\\subsection{Part 1}$/;"	u	section:Results
+Part 1	Phys 230 Lab Reports/Experiment 2/Lab3.tex	/^\\subsection{Part 1}$/;"	u	section:Discussion
+Part 1	Phys 230 Lab Reports/Experiment 3/Lab4.tex	/^\\subsection{Part 1}$/;"	u	section:Discussion
+Part 1	Phys 230 Lab Reports/Experiment 3/Lab4.tex	/^\\subsection{Part 1}$/;"	u	section:Experimental Method
+Part 1	Phys 230 Lab Reports/Experiment 3/Lab4.tex	/^\\subsection{Part 1}$/;"	u	section:Results
+Part 2	Phys 230 Lab Reports/Experiment 1/Lab2.tex	/^\\subsection{Part 2}$/;"	u	section:Discussion
+Part 2	Phys 230 Lab Reports/Experiment 1/Lab2.tex	/^\\subsection{Part 2}$/;"	u	section:Experimental Method
+Part 2	Phys 230 Lab Reports/Experiment 1/Lab2.tex	/^\\subsection{Part 2}$/;"	u	section:Results
+Part 2	Phys 230 Lab Reports/Experiment 3/Lab4.tex	/^\\subsection{Part 2}$/;"	u	section:Discussion
+Part 2	Phys 230 Lab Reports/Experiment 3/Lab4.tex	/^\\subsection{Part 2}$/;"	u	section:Experimental Method
+Part 2	Phys 230 Lab Reports/Experiment 3/Lab4.tex	/^\\subsection{Part 2}$/;"	u	section:Results
+Premovie notes	ENGL-199/Skyfall notes/skyfall.tex	/^  \\subsection{Premovie notes}$/;"	u	section:March 14
+Price	ENGL-199/descriptive report/report.tex	/^  \\section{Price}$/;"	s
+Professional Experience	resume/coop/resume.tex	/^  \\subsection{Professional Experience}$/;"	u	section:Computer Experience
+Projected Economic Status	Work-Term-Reports/wkexp902/report.tex	/^\\section{Projected Economic Status}$/;"	s
+Proof of the First Zonklar Equation	ENGL-199/final assignment/IEEEtran/bare_adv.tex	/^\\section{Proof of the First Zonklar Equation}$/;"	s
+Proof of the First Zonklar Equation	ENGL-199/final assignment/IEEEtran/bare_jrnl.tex	/^\\section{Proof of the First Zonklar Equation}$/;"	s
+Proof of the First Zonklar Equation	ENGL-199/final assignment/IEEEtran/bare_jrnl_compsoc.tex	/^\\section{Proof of the First Zonklar Equation}$/;"	s
+Proof of the First Zonklar Equation	ENGL-199/final assignment/IEEEtran/bare_jrnl_comsoc.tex	/^\\section{Proof of the First Zonklar Equation}$/;"	s
+Proof of the First Zonklar Equation	ENGL-199/final assignment/IEEEtran/bare_jrnl_transmag.tex	/^\\section{Proof of the First Zonklar Equation}$/;"	s
+Recent Technological Advances	Work-Term-Reports/wkexp902/report.tex	/^\\section{Recent Technological Advances}$/;"	s
+References available upon request	resume/coop/resume.tex	/^\\section{References available upon request}$/;"	s
+References to old ways vs new ways	ENGL-199/Skyfall notes/skyfall.tex	/^    \\section{References to old ways vs new ways}$/;"	s
+Renegade and Paragon Playing Styles	ENGL-199/final assignment/report.tex	/^\\section{Renegade and Paragon Playing Styles}$/;"	s
+Results	Phys 230 Lab Reports/Experiment 1/Lab2.tex	/^\\section{Results}$/;"	s
+Results	Phys 230 Lab Reports/Experiment 2/Lab3.tex	/^\\section{Results}$/;"	s
+Results	Phys 230 Lab Reports/Experiment 3/Lab4.tex	/^\\section{Results}$/;"	s
+Results	Phys 230 Lab Reports/Experiment 4/Lab7.tex	/^\\section{Results}$/;"	s
+Ross Sheppard High School Audio/Video Club	resume/coop/resume.tex	/^  \\subsection{Ross Sheppard High School Audio\/Video Club} \\hfill 2013-2016$/;"	u	section:Volunteer Experience
+Subsection Heading Here	ENGL-199/final assignment/IEEEtran/bare_adv.tex	/^\\subsection{Subsection Heading Here}$/;"	u	section:Introduction
+Subsection Heading Here	ENGL-199/final assignment/IEEEtran/bare_conf.tex	/^\\subsection{Subsection Heading Here}$/;"	u	section:Introduction
+Subsection Heading Here	ENGL-199/final assignment/IEEEtran/bare_conf_compsoc.tex	/^\\subsection{Subsection Heading Here}$/;"	u	section:Introduction
+Subsection Heading Here	ENGL-199/final assignment/IEEEtran/bare_jrnl.tex	/^\\subsection{Subsection Heading Here}$/;"	u	section:Introduction
+Subsection Heading Here	ENGL-199/final assignment/IEEEtran/bare_jrnl_compsoc.tex	/^\\subsection{Subsection Heading Here}$/;"	u	section:Introduction
+Subsection Heading Here	ENGL-199/final assignment/IEEEtran/bare_jrnl_comsoc.tex	/^\\subsection{Subsection Heading Here}$/;"	u	section:Introduction
+Subsection Heading Here	ENGL-199/final assignment/IEEEtran/bare_jrnl_transmag.tex	/^\\subsection{Subsection Heading Here}$/;"	u	section:Introduction
+Subsubsection Heading Here	ENGL-199/final assignment/IEEEtran/bare_adv.tex	/^\\subsubsection{Subsubsection Heading Here}$/;"	b	subsection:Introduction""Subsection Heading Here
+Subsubsection Heading Here	ENGL-199/final assignment/IEEEtran/bare_conf.tex	/^\\subsubsection{Subsubsection Heading Here}$/;"	b	subsection:Introduction""Subsection Heading Here
+Subsubsection Heading Here	ENGL-199/final assignment/IEEEtran/bare_conf_compsoc.tex	/^\\subsubsection{Subsubsection Heading Here}$/;"	b	subsection:Introduction""Subsection Heading Here
+Subsubsection Heading Here	ENGL-199/final assignment/IEEEtran/bare_jrnl.tex	/^\\subsubsection{Subsubsection Heading Here}$/;"	b	subsection:Introduction""Subsection Heading Here
+Subsubsection Heading Here	ENGL-199/final assignment/IEEEtran/bare_jrnl_compsoc.tex	/^\\subsubsection{Subsubsection Heading Here}$/;"	b	subsection:Introduction""Subsection Heading Here
+Subsubsection Heading Here	ENGL-199/final assignment/IEEEtran/bare_jrnl_comsoc.tex	/^\\subsubsection{Subsubsection Heading Here}$/;"	b	subsection:Introduction""Subsection Heading Here
+Subsubsection Heading Here	ENGL-199/final assignment/IEEEtran/bare_jrnl_transmag.tex	/^\\subsubsection{Subsubsection Heading Here}$/;"	b	subsection:Introduction""Subsection Heading Here
+Summary of James Smith's article	ENGL-199/Skyfall notes/ieee style practice/report.tex	/^  \\section{Summary of James Smith's article }$/;"	s
+Tensions Between the Krogan and the Salarians	ENGL-199/final assignment/report.tex	/^\\section{Tensions Between the Krogan and the Salarians}$/;"	s
+The Environment	ENGL-199/descriptive report/report.tex	/^  \\section{The Environment}$/;"	s
+University of Alberta Academic and Co-op Status	resume/coop/resume.tex	/^\\section{University of Alberta Academic and Co-op Status}$/;"	s
+Volunteer Experience	resume/coop/resume.tex	/^\\section{Volunteer Experience}$/;"	s
+Work Preferences	Work-Term-Reports/wkexp901/report.tex	/^\\section{Work Preferences}$/;"	s
+all	Work-Term-Reports/wkexp902/Makefile	/^all: report.pdf$/;"	t
+eq1	Phys 230 Lab Reports/Experiment 1/Lab2.tex	/^  E=-\\frac{\\Delta V}{\\Delta s} \\label{eq1}$/;"	l
+my-label	ENGL-199/blade runner notes/bladerunner movie notes.tex	/^\\label{my-label}$/;"	l
+sec:introduction	ENGL-199/final assignment/IEEEtran/bare_adv.tex	/^\\IEEEraisesectionheading{\\section{Introduction}\\label{sec:introduction}}$/;"	l
+sec:introduction	ENGL-199/final assignment/IEEEtran/bare_adv.tex	/^\\label{sec:introduction}$/;"	l
+sec:introduction	ENGL-199/final assignment/IEEEtran/bare_jrnl_compsoc.tex	/^\\IEEEraisesectionheading{\\section{Introduction}\\label{sec:introduction}}$/;"	l
