@@ -1,11 +1,13 @@
 .PHONY: clean format lint lint-html
 .DEFAULT_GOAL := report
 
+biber:
+	biber report
 format: clean
 	latexindent -w report.tex > /dev/null
 clean:
 	rm -rf output.html *.aux *.out *.fls *.fdb_latexmk *.log *.gz *.bak.* _minted-report *.bak* *.zip *.toc
-report:
+report: biber
 	pdflatex -shell-escape report
 lint: report
 	textidote --check en_CA report.tex
